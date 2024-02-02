@@ -22,14 +22,14 @@
                     
                 case .Perfectionalism:
                     [.unfinishedMasterpiece, .misfitMagic,.speedFrenzy,.blindFolded,.artSwap]
-                case .SelfDoubt:
-                    [.a]
                 case .Burnout:
-                    [.e]
+                    [.blastfromthePast,.sensorySymphony,.magnifytheMundane,.colorSwap,.PassthePassion]
                 case .Anxiety:
-                    [.a,.d,.c]
+                    [.breatheEasy,.imperfectlyPerfect,.braveHeart,.gratitudeSpark,.tinyTriumphs]
+                case .SelfDoubt:
+                    [.shadowShowdown,.trophyCase,.myOwnHero,.whatIf,.collaborativeCourage]
                 case .Inspiration:
-                    [.a,.c]
+                    [.goalVision,.joyReplay,.mindsEye,.dreamDestination,.innerMuse]
                 }
             }
         }
@@ -61,33 +61,29 @@
             //Anxiety
             //11-15
             case breatheEasy =
-            "Imagine a calming place in your mind and illistrate it"
-            
+                    "Imagine a calming place in your mind and illistrate it"
             case imperfectlyPerfect =
-            "Imperfectly Perfect \n Expand on a accident in your art to make something new"
+                    "Imperfectly Perfect \n Expand on a accident in your art to make something new"
             case  braveHeart =
-            "Brave Heart \n Draw your favorite superhero"
+                    "Brave Heart \n Draw your favorite superhero"
             case gratitudeSpark =
-            "Illustrate a simple thing that brings you joy"
+                    "Illustrate a simple thing that brings you joy"
             case tinyTriumphs =
-            "tinyTriumphs \n Using a recent win in your life draw a big picture"
+                    "tinyTriumphs \n Using a recent win in your life draw a big picture"
             
             // Self doubt
             //15-20
             case shadowShowdown =
-            "Shadow Showdown \n Draw yourself conquering your fears as a monster"
+                    "Shadow Showdown \n Draw yourself conquering your fears as a monster"
             case trophyCase =
-            "Trophy Case \n  Think several of your favorite accomplishments and create a collage"
+                    "Trophy Case \n  Think several of your favorite accomplishments and create a collage"
             case myOwnHero =
                "My Own Hero \n Draw yourself as a super hero "
             case whatIf =
-            "What if... \n Draw a random scenario where something went better than expected"
-            case  collaborativeCourage =
-            "CollaborativeCourage \n Share your doubts with a friend and draw the solution together"
+                    "What if... \n Draw a random scenario where something went better than expected"
+            case collaborativeCourage =
+                    "CollaborativeCourage \n Share your doubts with a friend and draw the solution together"
             
-        
-        
-        
         //Inspiration
             case goalVision =
             "Goal Vision \n Illustrate an artistic goal you're excited about achieving"
@@ -100,7 +96,7 @@
             case innerMuse =
             "Inner Muse \n Create a self-portrait in your most inspiring creative style"
 
-            
+
         }
 
 
