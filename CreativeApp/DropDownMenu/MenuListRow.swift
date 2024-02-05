@@ -10,24 +10,39 @@ import SwiftUI
 struct DropdownMenuListRow: View {
     let option: DropDownMenuOption
     
+    var menuText: LocalizedStringKey {
+        LocalizedStringKey(option.option)
+    }
     
     let onSelectedAction: (_ option: DropDownMenuOption) -> Void
     
     var body: some View {
-        Button(action: {
-            self.onSelectedAction(option)
-        }) {
-            Text(option.option)
-                .frame(maxWidth: .infinity, alignment: .leading)
+                    
+            
+//            NavigationLink {
+//                ActivitiesView()
+//            } label: {
+//                Text(menuText)
+//                    .frame(maxWidth: .infinity, alignment: .leading)
+//            }
+
+            Button(action: {
+                self.onSelectedAction(option)
+            }) {
+                Text(menuText)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+            }
+            .foregroundColor(.white)
+            .padding(.vertical, 5)
+            .padding(.horizontal)
         }
-        .foregroundColor(.black)
-        .padding(.vertical, 5)
-        .padding(.horizontal)
     }
-}
+
 
 struct DropdownMenuListRow_Previews: PreviewProvider {
     static var previews: some View {
         DropdownMenuListRow(option: DropDownMenuOption.whatIsBlockingYou, onSelectedAction: { _ in })
+        DropdownMenuListRow(option: DropDownMenuOption.whatIsBlockingYou, onSelectedAction: { _ in })
+            .environment(\.locale, Locale(identifier: "zh-Hans"))
     }
 }

@@ -1,5 +1,93 @@
 {
   "sourceLanguage" : "en",
-  "strings" : {},
+  "strings" : {
+    "Anxious" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "焦虑的"
+          }
+        }
+      }
+    },
+    "Burnout" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "烧完"
+          }
+        }
+      }
+    },
+    "Lack of inspiration" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "缺乏灵感"
+          }
+        }
+      }
+    },
+    "Let My Creativity Flow" : {
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "让我的创造力流动"
+          }
+        }
+      }
+    },
+    "Muse Me" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "缪斯我"
+          }
+        }
+      }
+    },
+    "Perfectionism" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "完美主义"
+          }
+        }
+      }
+    },
+    "Self doubt" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自我怀疑"
+          }
+        }
+      }
+    },
+    "What is blocking you?" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "是什么阻碍了你？"
+          }
+        }
+      }
+    }
+  },
   "version" : "1.0"
 }

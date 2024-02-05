@@ -20,6 +20,8 @@ extension DropDownMenuOption {
         DropDownMenuOption(option: "Perfectionism"),
         DropDownMenuOption(option: "Burnout"),
         DropDownMenuOption(option: "Anxious"),
+        DropDownMenuOption(option: "Muse Me"),
+        
     ]
 }
 

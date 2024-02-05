@@ -8,11 +8,19 @@
 import SwiftUI
 
 struct ActivitiesView: View {
+    var prompt: DropDownMenuOption
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(prompt.option)
+            .foregroundColor(.white)
+        
+            .background(
+                Image("wavybg")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 420, height: 100))
     }
 }
 
 #Preview {
-    ActivitiesView()
+    ActivitiesView(prompt: DropDownMenuOption(option: ""))
 }
