@@ -13,6 +13,7 @@ struct ContentView: View {
     @State private var trigger = false
     
     var body: some View {
+<<<<<<< Updated upstream
         NavigationStack {
             ZStack {
                 VStack {
@@ -56,6 +57,25 @@ struct ContentView: View {
                         .frame(width: 420, height: 100)
                         .blur(radius: 3))
                     
+=======
+        
+        ZStack {
+            VStack {
+                Text("Muse Me")
+                    
+
+                                DropdownMenu(
+                    selectedOption: self.$blockOption,
+                    placeholder: "What is blocking you?",
+                    options: DropDownMenuOption.creativeBlockOptions
+                )
+                
+                
+                DropdownMenu(
+                    selectedOption: self.$blockOption,
+                    placeholder: "What is blocking you?",
+                    options: DropDownMenuOption.creativeBlockOptions
+>>>>>>> Stashed changes
                     
             }
             //        Button("Tap Count: \(counter)"){
