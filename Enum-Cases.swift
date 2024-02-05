@@ -6,7 +6,7 @@
 //
 
 
-        enum Categories {
+    enum Categories: String {
             case MuseMe
             case Perfectionalism
             case SelfDoubt
