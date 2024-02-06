@@ -10,7 +10,7 @@ import SwiftUI
 struct ActivitiesView: View {
     var prompt: DropDownMenuOption
     var body: some View {
-        Text(prompt.option)
+        Text(prompt.enumOption.associatedPrompts.randomElement()!.rawValue)
             .foregroundColor(.white)
         
             .background(
@@ -22,5 +22,5 @@ struct ActivitiesView: View {
 }
 
 #Preview {
-    ActivitiesView(prompt: DropDownMenuOption(option: ""))
+    ActivitiesView(prompt: DropDownMenuOption(option: "", enumOption: .SelfDoubt))
 }
