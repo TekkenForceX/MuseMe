@@ -41,7 +41,7 @@ struct ContentView: View {
                     
                     
                     NavigationLink {
-                        ActivitiesView(prompt: blockOption ?? DropDownMenuOption(option: "Lack of inspiration"))
+                        ActivitiesView(prompt: blockOption ?? DropDownMenuOption(option: "Lack of inspiration", enumOption: .Anxiety))
                     } label: {
                         Text("Let My Creativity Flow")
                             .frame(width : 150, height: 150)
