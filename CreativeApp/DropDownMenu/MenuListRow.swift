@@ -42,8 +42,10 @@ struct DropdownMenuListRow: View {
 
 struct DropdownMenuListRow_Previews: PreviewProvider {
     static var previews: some View {
-        DropdownMenuListRow(option: DropDownMenuOption.whatIsBlockingYou, onSelectedAction: { _ in })
-        DropdownMenuListRow(option: DropDownMenuOption.whatIsBlockingYou, onSelectedAction: { _ in })
+        // Assuming creativeBlockOptions has at least one element
+        DropdownMenuListRow(option: DropDownMenuOption.creativeBlockOptions.first!, onSelectedAction: { _ in })
+        DropdownMenuListRow(option: DropDownMenuOption.creativeBlockOptions.first!, onSelectedAction: { _ in })
             .environment(\.locale, Locale(identifier: "zh-Hans"))
     }
 }
+
