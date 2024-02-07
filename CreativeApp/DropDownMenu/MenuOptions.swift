@@ -21,7 +21,7 @@ extension DropDownMenuOption {
         DropDownMenuOption(option: "Perfectionism", enumOption: .Perfectionalism),
         DropDownMenuOption(option: "Burnout", enumOption: .Burnout),
         DropDownMenuOption(option: "Anxious", enumOption: .Anxiety),
-        DropDownMenuOption(option: "Muse Me", enumOption: .MuseMe),
+        DropDownMenuOption(option: "Let my creativity flow", enumOption: .MuseMe),
         
     ]
 }

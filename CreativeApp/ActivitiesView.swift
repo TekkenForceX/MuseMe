@@ -11,7 +11,17 @@ struct ActivitiesView: View {
     var prompt: DropDownMenuOption
     var body: some View {
         Text(prompt.enumOption.associatedPrompts.randomElement()!.rawValue)
+            .overlay {
+                RoundedRectangle(cornerRadius: 13)
+                    .stroke(.cyan, lineWidth: 3)
+            }
             .foregroundColor(.white)
+            .bold()
+            .multilineTextAlignment(.center)
+            .offset(x: 0, y: -50)
+            .font(.title)
+            .font(.system(size: 15, weight: .regular, design: .default))
+        
         
             .background(
                 Image("wavybg")
