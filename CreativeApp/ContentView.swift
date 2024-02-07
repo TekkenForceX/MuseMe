@@ -13,7 +13,6 @@ struct ContentView: View {
     @State private var trigger = false
     
     var body: some View {
-<<<<<<< Updated upstream
         NavigationStack {
             ZStack {
                 VStack {
