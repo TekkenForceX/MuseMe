@@ -8,6 +8,7 @@
 import SwiftUI
 
 @main
+
 struct CreativeAppApp: App {
     var body: some Scene {
         WindowGroup {

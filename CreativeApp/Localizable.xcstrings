@@ -23,6 +23,17 @@
         }
       }
     },
+    "Generate Muse" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "生成缪斯"
+          }
+        }
+      }
+    },
     "Lack of inspiration" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -34,7 +45,19 @@
         }
       }
     },
+    "Let my creativity flow" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "让我的创造力尽情发挥"
+          }
+        }
+      }
+    },
     "Let My Creativity Flow" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {

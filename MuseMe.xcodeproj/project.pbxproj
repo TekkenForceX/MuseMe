@@ -22,7 +22,7 @@
 
 /* Begin PBXFileReference section */
 		C7719B7C2B6AEAD400C5DD80 /* Enum-Cases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Enum-Cases.swift"; sourceTree = "<group>"; };
-		D1C93A942B681A22001734A2 /* CreativeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreativeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1C93A942B681A22001734A2 /* MuseMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuseMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1C93A972B681A22001734A2 /* CreativeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreativeAppApp.swift; sourceTree = "<group>"; };
 		D1C93A992B681A22001734A2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D1C93A9B2B681A24001734A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 		D1C93A952B681A22001734A2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D1C93A942B681A22001734A2 /* CreativeApp.app */,
+				D1C93A942B681A22001734A2 /* MuseMe.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,9 +99,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D1C93A932B681A22001734A2 /* CreativeApp */ = {
+		D1C93A932B681A22001734A2 /* MuseMe */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D1C93AA22B681A24001734A2 /* Build configuration list for PBXNativeTarget "CreativeApp" */;
+			buildConfigurationList = D1C93AA22B681A24001734A2 /* Build configuration list for PBXNativeTarget "MuseMe" */;
 			buildPhases = (
 				D1C93A902B681A22001734A2 /* Sources */,
 				D1C93A912B681A22001734A2 /* Frameworks */,
@@ -111,9 +111,9 @@
 			);
 			dependencies = (
 			);
-			name = CreativeApp;
+			name = MuseMe;
 			productName = CreativeApp;
-			productReference = D1C93A942B681A22001734A2 /* CreativeApp.app */;
+			productReference = D1C93A942B681A22001734A2 /* MuseMe.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -124,14 +124,14 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					D1C93A932B681A22001734A2 = {
 						CreatedOnToolsVersion = 15.0.1;
 					};
 				};
 			};
-			buildConfigurationList = D1C93A8F2B681A22001734A2 /* Build configuration list for PBXProject "CreativeApp" */;
+			buildConfigurationList = D1C93A8F2B681A22001734A2 /* Build configuration list for PBXProject "MuseMe" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -145,7 +145,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D1C93A932B681A22001734A2 /* CreativeApp */,
+				D1C93A932B681A22001734A2 /* MuseMe */,
 			);
 		};
 /* End PBXProject section */
@@ -187,6 +187,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -250,6 +251,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -362,7 +364,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D1C93A8F2B681A22001734A2 /* Build configuration list for PBXProject "CreativeApp" */ = {
+		D1C93A8F2B681A22001734A2 /* Build configuration list for PBXProject "MuseMe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D1C93AA02B681A24001734A2 /* Debug */,
@@ -371,7 +373,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D1C93AA22B681A24001734A2 /* Build configuration list for PBXNativeTarget "CreativeApp" */ = {
+		D1C93AA22B681A24001734A2 /* Build configuration list for PBXNativeTarget "MuseMe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D1C93AA32B681A24001734A2 /* Debug */,

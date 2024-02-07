@@ -16,6 +16,10 @@ struct ContentView: View {
         NavigationStack {
             ZStack {
                 VStack {
+                    Text("Muse Me")
+                        .font(.system(size: 80)).bold()
+                        .foregroundColor(.cyan)
+                        .padding(.leading)
                     DropdownMenu(
                         selectedOption: self.$blockOption,
                         placeholder: "What is blocking you?", 
@@ -42,12 +46,19 @@ struct ContentView: View {
                     NavigationLink {
                         ActivitiesView(prompt: blockOption ?? DropDownMenuOption(option: "Lack of inspiration", enumOption: .Anxiety))
                     } label: {
-                        Text("Let My Creativity Flow")
-                            .frame(width : 150, height: 150)
-                            .foregroundColor(.black)
-                            .background(Color.cyan)
-                            .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-                            .sensoryFeedback(.success, trigger: trigger)
+                        ZStack {
+                            Circle()
+                                .stroke(Color.cyan, style: StrokeStyle(lineWidth: 10))
+                                .sensoryFeedback(.success, trigger: trigger)
+                                .frame(width:300)
+                            Text("Generate Muse")
+                                .font(.largeTitle)
+                                .frame(width : 200)
+                                .foregroundColor(.white)
+                               // .background(Color.cyan)
+                               // .clipShape(Circle())
+                                .sensoryFeedback(.success, trigger: trigger)
+                        }
                     }
                 }.background(
                     Image("wavybg")
