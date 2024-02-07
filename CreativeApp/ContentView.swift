@@ -57,35 +57,7 @@ struct ContentView: View {
                         .frame(width: 420, height: 100)
                         .blur(radius: 3))
                     
-=======
-        
-        ZStack {
-            VStack {
-                Text("Muse Me")
-                    
 
-                                DropdownMenu(
-                    selectedOption: self.$blockOption,
-                    placeholder: "What is blocking you?",
-                    options: DropDownMenuOption.creativeBlockOptions
-                )
-                
-                
-                DropdownMenu(
-                    selectedOption: self.$blockOption,
-                    placeholder: "What is blocking you?",
-                    options: DropDownMenuOption.creativeBlockOptions
->>>>>>> Stashed changes
-                    
-            }
-            //        Button("Tap Count: \(counter)"){
-            //            counter += 1
-            //            trigger.toggle()
-            //        }
-            //        .sensoryFeedback(.warning, trigger: trigger)
-        }
-    }
-}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
