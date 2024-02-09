@@ -30,7 +30,7 @@ struct DropdownMenuList: View {
         .padding(.vertical, 5)
         .overlay {
             RoundedRectangle(cornerRadius: 24)
-                .stroke(.gray, lineWidth: 2)
+                .stroke(.cyan, lineWidth: 2)
         }
     }
 }
@@ -38,6 +38,9 @@ struct DropdownMenuList: View {
 struct DropdownMenuList_Previews: PreviewProvider {
     static var previews: some View {
         DropdownMenuList(options: DropDownMenuOption.creativeBlockOptions, onSelectedAction: { _ in })
+        DropdownMenuList(options: DropDownMenuOption.creativeBlockOptions, onSelectedAction: { _ in })
+            .environment(\.locale, Locale(identifier: "zh-Hans"))
+
     }
 }
 

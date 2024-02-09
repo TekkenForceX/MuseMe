@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C7719B7D2B6AEAD400C5DD80 /* Enum-Cases.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7719B7C2B6AEAD400C5DD80 /* Enum-Cases.swift */; };
+		C7719B7F2B76A15E00C5DD80 /* Updated-Button-and-Prompt-frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7719B7E2B76A15E00C5DD80 /* Updated-Button-and-Prompt-frame.swift */; };
 		D1C93A982B681A22001734A2 /* CreativeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C93A972B681A22001734A2 /* CreativeAppApp.swift */; };
 		D1C93A9A2B681A22001734A2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C93A992B681A22001734A2 /* ContentView.swift */; };
 		D1C93A9C2B681A24001734A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1C93A9B2B681A24001734A2 /* Assets.xcassets */; };
@@ -15,9 +17,13 @@
 		D1C93AA92B681F2C001734A2 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C93AA82B681F2C001734A2 /* Menu.swift */; };
 		D1C93AAF2B6AC4B5001734A2 /* MenuList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C93AAE2B6AC4B5001734A2 /* MenuList.swift */; };
 		D1C93AB12B6AC616001734A2 /* MenuListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C93AB02B6AC616001734A2 /* MenuListRow.swift */; };
+		D1C93AB32B6C2F56001734A2 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = D1C93AB22B6C2F56001734A2 /* Localizable.xcstrings */; };
+		D1C93AB72B6D6D7F001734A2 /* ActivitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C93AB62B6D6D7F001734A2 /* ActivitiesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C7719B7C2B6AEAD400C5DD80 /* Enum-Cases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Enum-Cases.swift"; sourceTree = "<group>"; };
+		C7719B7E2B76A15E00C5DD80 /* Updated-Button-and-Prompt-frame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Updated-Button-and-Prompt-frame.swift"; sourceTree = "<group>"; };
 		D1C93A942B681A22001734A2 /* CreativeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreativeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1C93A972B681A22001734A2 /* CreativeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreativeAppApp.swift; sourceTree = "<group>"; };
 		D1C93A992B681A22001734A2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -27,6 +33,8 @@
 		D1C93AA82B681F2C001734A2 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		D1C93AAE2B6AC4B5001734A2 /* MenuList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuList.swift; sourceTree = "<group>"; };
 		D1C93AB02B6AC616001734A2 /* MenuListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListRow.swift; sourceTree = "<group>"; };
+		D1C93AB22B6C2F56001734A2 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		D1C93AB62B6D6D7F001734A2 /* ActivitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,8 @@
 		D1C93A8B2B681A22001734A2 = {
 			isa = PBXGroup;
 			children = (
+				C7719B7E2B76A15E00C5DD80 /* Updated-Button-and-Prompt-frame.swift */,
+				C7719B7C2B6AEAD400C5DD80 /* Enum-Cases.swift */,
 				D1C93A962B681A22001734A2 /* CreativeApp */,
 				D1C93A952B681A22001734A2 /* Products */,
 			);
@@ -62,8 +72,10 @@
 				D1C93AA52B681C0F001734A2 /* DropDownMenu */,
 				D1C93A972B681A22001734A2 /* CreativeAppApp.swift */,
 				D1C93A992B681A22001734A2 /* ContentView.swift */,
+				D1C93AB62B6D6D7F001734A2 /* ActivitiesView.swift */,
 				D1C93A9B2B681A24001734A2 /* Assets.xcassets */,
 				D1C93A9D2B681A24001734A2 /* Preview Content */,
+				D1C93AB22B6C2F56001734A2 /* Localizable.xcstrings */,
 			);
 			path = CreativeApp;
 			sourceTree = "<group>";
@@ -129,6 +141,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = D1C93A8B2B681A22001734A2;
 			productRefGroup = D1C93A952B681A22001734A2 /* Products */;
@@ -147,6 +160,7 @@
 			files = (
 				D1C93A9F2B681A24001734A2 /* Preview Assets.xcassets in Resources */,
 				D1C93A9C2B681A24001734A2 /* Assets.xcassets in Resources */,
+				D1C93AB32B6C2F56001734A2 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,10 +172,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1C93A9A2B681A22001734A2 /* ContentView.swift in Sources */,
+				C7719B7D2B6AEAD400C5DD80 /* Enum-Cases.swift in Sources */,
+				C7719B7F2B76A15E00C5DD80 /* Updated-Button-and-Prompt-frame.swift in Sources */,
 				D1C93AB12B6AC616001734A2 /* MenuListRow.swift in Sources */,
 				D1C93A982B681A22001734A2 /* CreativeAppApp.swift in Sources */,
 				D1C93AA92B681F2C001734A2 /* Menu.swift in Sources */,
 				D1C93AAF2B6AC4B5001734A2 /* MenuList.swift in Sources */,
+				D1C93AB72B6D6D7F001734A2 /* ActivitiesView.swift in Sources */,
 				D1C93AA72B681CA4001734A2 /* MenuOptions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

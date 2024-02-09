@@ -29,20 +29,21 @@ struct DropdownMenu: View {
             HStack {
                 Text(selectedOption == nil ? placeholder : selectedOption!.option)
                     .fontWeight(.medium)
-                    .foregroundColor(selectedOption == nil ? .gray : .black)
+                    .foregroundColor(selectedOption == nil ? .gray : .white)
+                    .environment(\.locale, Locale(identifier: "zh-Hans"))
                 
                 Spacer()
                 
                 Image(systemName: self.isOptionsPresented ? "chevron.up" : "chevron.down")
                     // This modifier available for Image since iOS 16.0
                     .fontWeight(.medium)
-                    .foregroundColor(.black)
+                    .foregroundColor(.white)
             }
         }
         .padding()
         .overlay {
             RoundedRectangle(cornerRadius: 24)
-                .stroke(.gray, lineWidth: 2)
+                .stroke(.cyan, lineWidth: 2)
         }
         .overlay(alignment: .top) {
             VStack {
