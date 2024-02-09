@@ -36,15 +36,15 @@
         enum Prompt: String, CaseIterable {
            //Perfectionism 1-5
             case unfinishedMasterpiece =
-                    "Unfinished Masterpiece: \n finish a work in progress"
+                    "Unfinished Masterpiece: \n Finish a project that is in progress"
             case misfitMagic =
-                    "organized Mess: \n Take A mess and draw it"
+                    "Organized Mess: \n Take A mess and draw it"
             case speedFrenzy =
                     "Speed Frenzy: \n Set a timer and keep drawing until it runs out!"
             case blindFolded =
                     "Blindfolded: \n Draw a picture with your eyes closed"
             case artSwap =
-                    "Art Swap: \n mix styles Unleash the unexpected!"
+                    "Art Swap: \n Mix styles unleash the unexpected!"
             
             //Burnout 6-10
             case blastfromthePast =
@@ -80,7 +80,7 @@
             case myOwnHero =
                "My Own Hero: \n Draw yourself as a super hero "
             case whatIf =
-                    "What if...: \n Draw a random scenario where something went better than expected"
+                    "What if: \n Draw a random scenario where something went better than expected"
             case collaborativeCourage =
                     "Collaborative Courage: \n Share your doubts with a friend and draw the solution together"
             

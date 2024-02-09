@@ -44,12 +44,11 @@ struct ContentView: View {
                     
                     
                     NavigationLink {
-                        ActivitiesView(prompt: blockOption ?? DropDownMenuOption(option: "Lack of inspiration", enumOption: .Anxiety))
+                        ActivitiesView(prompt: blockOption ?? DropDownMenuOption(option: "Lack of inspiration", enumOption: .MuseMe))
                     } label: {
                         ZStack {
                             Circle()
                                 .stroke(Color.cyan, style: StrokeStyle(lineWidth: 10))
-                                .sensoryFeedback(.success, trigger: trigger)
                                 .frame(width:300)
                             Text("Generate Muse")
                                 .font(.largeTitle)
