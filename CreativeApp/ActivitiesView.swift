@@ -33,7 +33,7 @@ struct ActivitiesView: View {
                     //                .offset(x: 0, y: -50)
                         .font(.title)
                         .font(.system(size: 15, weight: .regular, design: .default))
-                        .background(.black)
+//                        .background(.black)
                         .clipShape(RoundedRectangle(cornerSize: CGSize(width: 10, height: 10)))
                     
                     
