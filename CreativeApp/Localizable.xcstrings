@@ -1,6 +1,9 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "" : {
+
+    },
     "Anxious" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -22,6 +25,9 @@
           }
         }
       }
+    },
+    "Draw Your Inspiration" : {
+
     },
     "Generate Muse" : {
       "extractionState" : "manual",
