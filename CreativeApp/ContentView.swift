@@ -42,9 +42,9 @@ struct ContentView: View {
                 }
                 .background(
                     Image("wavybg")
-                        .resizable()
-                        .scaledToFill()
-                        .blur(radius: 3)
+                        .resizable()  // Make the image resizable
+                        .scaledToFill() // Scale the image to fill the view
+                        .edgesIgnoringSafeArea(.all) // Let the image extend to the edges of the screen
                 )
             }
         }

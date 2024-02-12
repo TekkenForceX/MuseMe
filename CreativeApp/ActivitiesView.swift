@@ -7,67 +7,51 @@
 
 import SwiftUI
 
-
 struct ActivitiesView: View {
-    @State private var currentLine =  Line()
+    @State private var currentLine = Line()
     @State private var lines: [Line] = []
     var prompt: DropDownMenuOption
+
     var body: some View {
-        NavigationStack{
+        NavigationStack {
             ZStack {
                 Image("wavybg")
                     .resizable()
                     .scaledToFill()
                     .ignoresSafeArea()
+
                 VStack {
-                   
-                    
                     Text(prompt.enumOption.associatedPrompts.randomElement()!.rawValue)
-                    //                .overlay {
-                    //                    RoundedRectangle(cornerRadius: 13)
-                    //                        .stroke(.cyan, lineWidth: 3)
-                    //                }
                         .foregroundColor(.white)
                         .bold()
                         .multilineTextAlignment(.center)
-                    //                .offset(x: 0, y: -50)
                         .font(.title)
-                        .font(.system(size: 15, weight: .regular, design: .default))
-                        .background(.black)
+                        .font(.system(size: 12, weight: .regular, design: .default))
                         .clipShape(RoundedRectangle(cornerSize: CGSize(width: 10, height: 10)))
-                    
-                    
+                        .padding(.bottom, 40)
+
                     NavigationLink {
                         DrawingView()
                     } label: {
                         ZStack {
+                            Circle()
+                                .stroke(Color.cyan, lineWidth: 10)
+                                .frame(width: 300)
                             Text("Let my creativity Flow!")
                                 .font(.largeTitle)
+                                .frame(width: 200)
                                 .foregroundColor(.white)
-                                .frame(width: 200, height: 200)
-                             .background(Color.cyan)
-                             .clipShape(Circle())
-                            
-                            
-                            //                            .offset(y: 150)
-                            // .background(Color.cyan)
-                            // .clipShape(Circle())
-                            
                         }
                     }
                 }
-                
-                //                .background(
-                //                    Image("wavybg")
-                //                        .resizable()
-                //                        .scaledToFill()
-                //                    .frame(width: 420, height: 100))
             }
-            
         }
     }
 }
 
-#Preview {
-    ActivitiesView(prompt: DropDownMenuOption(option: "", enumOption: .SelfDoubt))
+// Preview provider for ActivitiesView
+struct ActivitiesView_Previews: PreviewProvider {
+    static var previews: some View {
+        ActivitiesView(prompt: DropDownMenuOption(option: "", enumOption: .SelfDoubt))
+    }
 }
