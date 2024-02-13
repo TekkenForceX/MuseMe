@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C72A0A4A2B7C1FB40072A87C /* DropdownTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A0A492B7C1FB40072A87C /* DropdownTextView.swift */; };
 		C7719B7D2B6AEAD400C5DD80 /* Enum-Cases.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7719B7C2B6AEAD400C5DD80 /* Enum-Cases.swift */; };
 		D16CAA002B76AFDA00615EC2 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16CA9FF2B76AFDA00615EC2 /* DrawingView.swift */; };
 		D16CAA022B76B16A00615EC2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16CAA012B76B16A00615EC2 /* Constants.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C72A0A492B7C1FB40072A87C /* DropdownTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownTextView.swift; sourceTree = "<group>"; };
 		C7719B7C2B6AEAD400C5DD80 /* Enum-Cases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Enum-Cases.swift"; sourceTree = "<group>"; };
 		D16CA9FF2B76AFDA00615EC2 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		D16CAA012B76B16A00615EC2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				D1C93AA52B681C0F001734A2 /* DropDownMenu */,
 				D1C93A972B681A22001734A2 /* CreativeAppApp.swift */,
 				D1C93A992B681A22001734A2 /* ContentView.swift */,
+				C72A0A492B7C1FB40072A87C /* DropdownTextView.swift */,
 				D1C93AB62B6D6D7F001734A2 /* ActivitiesView.swift */,
 				D16CA9FF2B76AFDA00615EC2 /* DrawingView.swift */,
 				D1C93A9B2B681A24001734A2 /* Assets.xcassets */,
@@ -183,6 +186,7 @@
 				D1C93AB12B6AC616001734A2 /* MenuListRow.swift in Sources */,
 				D1C93A982B681A22001734A2 /* CreativeAppApp.swift in Sources */,
 				D1C93AA92B681F2C001734A2 /* Menu.swift in Sources */,
+				C72A0A4A2B7C1FB40072A87C /* DropdownTextView.swift in Sources */,
 				D1C93AAF2B6AC4B5001734A2 /* MenuList.swift in Sources */,
 				D16CAA062B76B83D00615EC2 /* ColorPickerView.swift in Sources */,
 				D16CAA002B76AFDA00615EC2 /* DrawingView.swift in Sources */,

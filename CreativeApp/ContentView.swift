@@ -21,7 +21,7 @@ struct ContentView: View {
                         .padding(.leading)
                     DropdownMenu(
                         selectedOption: $blockOption,
-                        placeholder: "What is blocking you?",
+                        placeholder: "What's blocking you?",
                         options: DropDownMenuOption.creativeBlockOptions
                     )
 
@@ -30,10 +30,28 @@ struct ContentView: View {
                     } label: {
                         ZStack {
                             Circle()
-                                .stroke(Color.cyan, lineWidth: 10)
-                                .frame(width: 300)
+                            
+                                .frame(width: 275)
+                                .foregroundColor(.cyan)
+                                .opacity(0.9)
+                                .shadow(color: .black,radius: 2)
+                            
+                            Circle()
+                            
+                                .stroke( .cyan, lineWidth: 10)
+                                .shadow(color: .black,radius: 50)
+                                .frame(width: 275)
+                            Circle()
+                            
+                                .stroke( .babyGreen, lineWidth: 1)
+                                .shadow(color: .black,radius: 50)
+                                .frame(width: 285)
+                            
+                           
+                            
                             Text("Generate Muse")
-                                .font(.largeTitle)
+                                .font(.largeTitle.bold())
+                                .shadow(color: .black,radius: 1)
                                 .frame(width: 200)
                                 .foregroundColor(.white)
                                 .sensoryFeedback(.success, trigger: trigger)
@@ -44,7 +62,10 @@ struct ContentView: View {
                     Image("wavybg")
                         .resizable()  // Make the image resizable
                         .scaledToFill() // Scale the image to fill the view
+                    // Added frame and changed width to make the app fit
+                        .frame(width: .infinity, height: 1000)
                         .edgesIgnoringSafeArea(.all) // Let the image extend to the edges of the screen
+                     
                 )
             }
         }

@@ -15,11 +15,12 @@ struct ActivitiesView: View {
     var body: some View {
         NavigationStack {
             ZStack {
+               
                 Image("wavybg")
                     .resizable()
                     .scaledToFill()
-                    .ignoresSafeArea()
-
+                    .frame(width: .infinity, height: 1000)
+                    .edgesIgnoringSafeArea(.all)
                 VStack {
                     Text(prompt.enumOption.associatedPrompts.randomElement()!.rawValue)
                         .foregroundColor(.white)
@@ -27,23 +28,34 @@ struct ActivitiesView: View {
                         .multilineTextAlignment(.center)
                         .font(.title)
                         .font(.system(size: 12, weight: .regular, design: .default))
-                        .clipShape(RoundedRectangle(cornerSize: CGSize(width: 10, height: 10)))
+//                        .clipShape(RoundedRectangle(cornerSize: CGSize(width: 10, height: 10)))
                         .padding(.bottom, 40)
+                        .padding()
 
                     NavigationLink {
                         DrawingView()
                     } label: {
                         ZStack {
                             Circle()
+                            
+                                .frame(width: 275)
+                                .foregroundColor(.cyan)
+                                .opacity(0.9)
+                                .shadow(color: .black,radius: 2)
+    
+                            Circle()
+                            
                                 .stroke(Color.cyan, lineWidth: 10)
-                                .frame(width: 300)
-                            Text("Let my creativity Flow!")
-                                .font(.largeTitle)
+                                .shadow(color: .black,radius: 50)
+                                .frame(width: 275)
+                            Text("Draw your muse!")
+                                .font(.largeTitle.bold())
+                                .shadow(color: .black,radius: 1)
                                 .frame(width: 200)
                                 .foregroundColor(.white)
                         }
                     }
-                }
+                }.padding()
             }
         }
     }

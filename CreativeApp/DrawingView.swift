@@ -62,12 +62,13 @@ struct DrawingView: View {
                     }
                     .padding()
                 }
-                .padding(20) // Apply padding to the VStack
+                .padding(20) 
                 .background(
                     Image("wavybg")
                         .resizable()
                         .scaledToFill()
-                        .blur(radius: 3)
+                        .frame(width: .infinity, height: 1000)
+                        .edgesIgnoringSafeArea(.all)
                 )
             }
         }
