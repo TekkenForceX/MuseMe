@@ -28,9 +28,10 @@ struct ActivitiesView: View {
                         .multilineTextAlignment(.center)
                         .font(.title)
                         .font(.system(size: 12, weight: .regular, design: .default))
-//                        .clipShape(RoundedRectangle(cornerSize: CGSize(width: 10, height: 10)))
+//                        .clipShape(RoundedRectangle (cornerSize: CGSize(width: 10, height: 10)))
                         .padding(.bottom, 40)
                         .padding()
+                        
 
                     NavigationLink {
                         DrawingView()

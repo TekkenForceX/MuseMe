@@ -12,6 +12,7 @@
 		D16CAA002B76AFDA00615EC2 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16CA9FF2B76AFDA00615EC2 /* DrawingView.swift */; };
 		D16CAA022B76B16A00615EC2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16CAA012B76B16A00615EC2 /* Constants.swift */; };
 		D16CAA062B76B83D00615EC2 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16CAA052B76B83D00615EC2 /* ColorPickerView.swift */; };
+		D19A7A752BCF00D400E03789 /* ThreeDButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19A7A742BCF00D400E03789 /* ThreeDButton.swift */; };
 		D1C93A982B681A22001734A2 /* CreativeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C93A972B681A22001734A2 /* CreativeAppApp.swift */; };
 		D1C93A9A2B681A22001734A2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C93A992B681A22001734A2 /* ContentView.swift */; };
 		D1C93A9C2B681A24001734A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1C93A9B2B681A24001734A2 /* Assets.xcassets */; };
@@ -30,6 +31,8 @@
 		D16CA9FF2B76AFDA00615EC2 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		D16CAA012B76B16A00615EC2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D16CAA052B76B83D00615EC2 /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
+		D19A7A732BCDAFD600E03789 /* MuseMe-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MuseMe-Info.plist"; sourceTree = "<group>"; };
+		D19A7A742BCF00D400E03789 /* ThreeDButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDButton.swift; sourceTree = "<group>"; };
 		D1C93A942B681A22001734A2 /* MuseMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuseMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1C93A972B681A22001734A2 /* CreativeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreativeAppApp.swift; sourceTree = "<group>"; };
 		D1C93A992B681A22001734A2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +60,7 @@
 		D1C93A8B2B681A22001734A2 = {
 			isa = PBXGroup;
 			children = (
+				D19A7A732BCDAFD600E03789 /* MuseMe-Info.plist */,
 				C7719B7C2B6AEAD400C5DD80 /* Enum-Cases.swift */,
 				D1C93A962B681A22001734A2 /* CreativeApp */,
 				D1C93A952B681A22001734A2 /* Products */,
@@ -85,6 +89,7 @@
 				D1C93AB22B6C2F56001734A2 /* Localizable.xcstrings */,
 				D16CAA012B76B16A00615EC2 /* Constants.swift */,
 				D16CAA052B76B83D00615EC2 /* ColorPickerView.swift */,
+				D19A7A742BCF00D400E03789 /* ThreeDButton.swift */,
 			);
 			path = CreativeApp;
 			sourceTree = "<group>";
@@ -191,6 +196,7 @@
 				D16CAA062B76B83D00615EC2 /* ColorPickerView.swift in Sources */,
 				D16CAA002B76AFDA00615EC2 /* DrawingView.swift in Sources */,
 				D1C93AB72B6D6D7F001734A2 /* ActivitiesView.swift in Sources */,
+				D19A7A752BCF00D400E03789 /* ThreeDButton.swift in Sources */,
 				D1C93AA72B681CA4001734A2 /* MenuOptions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,6 +336,8 @@
 				DEVELOPMENT_TEAM = U5826G2GQB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MuseMe-Info.plist";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "MuseMe would like to save your photos to your gallery.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -359,6 +367,8 @@
 				DEVELOPMENT_TEAM = U5826G2GQB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MuseMe-Info.plist";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "MuseMe would like to save your photos to your gallery.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -29,6 +29,9 @@
     "Draw Your Inspiration" : {
 
     },
+    "Draw your muse!" : {
+
+    },
     "Generate Muse" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -72,9 +75,6 @@
           }
         }
       }
-    },
-    "Let my creativity Flow!" : {
-
     },
     "Muse Me" : {
       "extractionState" : "manual",

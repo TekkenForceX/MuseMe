@@ -29,7 +29,9 @@ struct DropdownMenu: View {
             HStack {
                 Text(selectedOption == nil ? placeholder : selectedOption!.option)
                     .fontWeight(.medium)
-                    .foregroundColor(selectedOption == nil ? .gray : .white)
+                    .foregroundColor(selectedOption == nil ? .white : .white)
+                    .font(.title3)
+                    .bold()
                     .environment(\.locale, Locale(identifier: "zh-Hans"))
                 
                 Spacer()

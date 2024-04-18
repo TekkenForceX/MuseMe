@@ -15,10 +15,18 @@ struct ContentView: View {
         NavigationStack {
             ZStack {
                 VStack {
-                    Text("Muse Me")
-                        .font(.system(size: 80)).bold()
-                        .foregroundColor(.cyan)
-                        .padding(.leading)
+                    ZStack {
+                        Text("Muse Me")
+                            .font(.system(size: 80)).bold()
+                            .foregroundColor(.cyan)
+                            .padding(.leading)
+                            .offset(x:3, y:3)
+                        
+                        Text("Muse Me")
+                            .font(.system(size: 80)).bold()
+                            .foregroundColor(.white)
+                            .padding(.leading)
+                    }
                     DropdownMenu(
                         selectedOption: $blockOption,
                         placeholder: "What's blocking you?",
@@ -65,7 +73,7 @@ struct ContentView: View {
                     // Added frame and changed width to make the app fit
                         .frame(width: .infinity, height: 1000)
                         .edgesIgnoringSafeArea(.all) // Let the image extend to the edges of the screen
-                     
+                        .blur(radius: /*@START_MENU_TOKEN@*/3.0/*@END_MENU_TOKEN@*/)
                 )
             }
         }
