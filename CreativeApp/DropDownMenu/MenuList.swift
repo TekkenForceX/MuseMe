@@ -16,9 +16,12 @@ struct DropdownMenuList: View {
     
     var body: some View {
         ScrollView {
-            LazyVStack(alignment: .leading, spacing: 2) {
+            LazyVStack(alignment: .leading, spacing: 1) {
                 ForEach(options) { option in
                     DropdownMenuListRow(option: option, onSelectedAction: self.onSelectedAction)
+                        .background(Color.gray)
+                        .cornerRadius(24)
+                    
                 }
             }
         }
@@ -29,8 +32,8 @@ struct DropdownMenuList: View {
         )
         .padding(.vertical, 5)
         .overlay {
-            RoundedRectangle(cornerRadius: 24)
-                .stroke(.cyan, lineWidth: 2)
+//            RoundedRectangle(cornerRadius: 24)
+//                .stroke(.cyan, lineWidth: 2)
         }
     }
 }
@@ -40,6 +43,7 @@ struct DropdownMenuList_Previews: PreviewProvider {
         DropdownMenuList(options: DropDownMenuOption.creativeBlockOptions, onSelectedAction: { _ in })
         DropdownMenuList(options: DropDownMenuOption.creativeBlockOptions, onSelectedAction: { _ in })
             .environment(\.locale, Locale(identifier: "zh-Hans"))
+            .foregroundColor(.blue)
 
     }
 }

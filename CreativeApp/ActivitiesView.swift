@@ -19,7 +19,7 @@ struct ActivitiesView: View {
                 Image("wavybg")
                     .resizable()
                     .scaledToFill()
-                    .frame(width: .infinity, height: 1000)
+                    .frame(width: .infinity, height: 880)
                     .edgesIgnoringSafeArea(.all)
                 VStack {
                     Text(prompt.enumOption.associatedPrompts.randomElement()!.rawValue)

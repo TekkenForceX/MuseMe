@@ -24,6 +24,8 @@ struct DropdownMenu: View {
         Button(action: {
             withAnimation {
                 self.isOptionsPresented.toggle()
+                
+                
             }
         }) {
             HStack {
@@ -39,13 +41,16 @@ struct DropdownMenu: View {
                 Image(systemName: self.isOptionsPresented ? "chevron.up" : "chevron.down")
                     // This modifier available for Image since iOS 16.0
                     .fontWeight(.medium)
-                    .foregroundColor(.white)
+                
             }
         }
         .padding()
+        .background(.gray)
+        .cornerRadius(24)
         .overlay {
-            RoundedRectangle(cornerRadius: 24)
-                .stroke(.cyan, lineWidth: 2)
+//            RoundedRectangle(cornerRadius: 24)
+//                .stroke(.cyan, lineWidth: 2)
+                
         }
         .overlay(alignment: .top) {
             VStack {

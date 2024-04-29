@@ -14,9 +14,11 @@ struct DropdownTextView: View {
             .foregroundColor(.white)
             .bold()
             .shadow(color:.black, radius: 1)
+        
     }
 }
 
 #Preview {
-    DropdownTextView(text: "")
+    DropdownTextView(text: "What")
+    
 }

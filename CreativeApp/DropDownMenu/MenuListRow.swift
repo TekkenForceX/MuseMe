@@ -35,7 +35,7 @@ struct DropdownMenuListRow: View {
                     .font(.title3)
                     .bold()
             }
-            .foregroundColor(.white)
+            .foregroundColor(.black)
             .padding(.vertical, 5)
             .padding(.horizontal)
         }
