@@ -6,15 +6,14 @@
 //
 
 import SwiftUI
+import UIKit
 
-// Definition of the Line struct
 struct Line {
     var points = [CGPoint]()
     var color: Color = .red
     var lineWidth: Double = 1.0
 }
 
-// DrawingView implementation
 struct DrawingView: View {
     @State private var currentLine = Line()
     @State private var lines: [Line] = []
@@ -59,10 +58,18 @@ struct DrawingView: View {
                             .frame(width: 200)
 
                         ColorPicker("", selection: $selectedColor)
+
+                        Button("Save Drawing") {
+                            saveDrawing()
+                        }
+                        .padding()
+                        .background(Color.blue)
+                        .foregroundColor(.white)
+                        .cornerRadius(5)
                     }
                     .padding()
                 }
-                .padding(20) 
+                .padding(20)
                 .background(
                     Image("wavybg")
                         .resizable()
@@ -73,9 +80,29 @@ struct DrawingView: View {
             }
         }
     }
+
+    func saveDrawing() {
+        let renderer = UIGraphicsImageRenderer(size: CGSize(width: 380, height: 380))
+        let image = renderer.image { ctx in
+            ctx.cgContext.setFillColor(UIColor.white.cgColor)
+            ctx.cgContext.setStrokeColor(UIColor.black.cgColor)
+            ctx.cgContext.setLineWidth(CGFloat(thickness))
+            
+            let path = UIBezierPath()
+            for line in lines {
+                guard let firstPoint = line.points.first else { continue }
+                path.move(to: firstPoint)
+                line.points.forEach { path.addLine(to: $0) }
+                ctx.cgContext.setStrokeColor(UIColor(line.color).cgColor)
+                ctx.cgContext.setLineWidth(CGFloat(line.lineWidth))
+                path.stroke()
+            }
+        }
+        
+        UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+    }
 }
 
-// Preview provider for DrawingView
 struct DrawingView_Previews: PreviewProvider {
     static var previews: some View {
         DrawingView()

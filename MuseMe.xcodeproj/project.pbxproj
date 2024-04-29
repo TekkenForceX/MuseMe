@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		271E2B222BE01A9400D802AD /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271E2B212BE01A9400D802AD /* ProfileView.swift */; };
+		271E2B242BE01FD700D802AD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271E2B232BE01FD700D802AD /* SettingsView.swift */; };
+		271E2B262BE0218E00D802AD /* AccountSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271E2B252BE0218E00D802AD /* AccountSettingsView.swift */; };
+		271E2B282BE0219C00D802AD /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271E2B272BE0219C00D802AD /* PreferencesView.swift */; };
+		271E2B2A2BE021A900D802AD /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271E2B292BE021A900D802AD /* NotificationsView.swift */; };
 		C72A0A4A2B7C1FB40072A87C /* DropdownTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A0A492B7C1FB40072A87C /* DropdownTextView.swift */; };
 		C7719B7D2B6AEAD400C5DD80 /* Enum-Cases.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7719B7C2B6AEAD400C5DD80 /* Enum-Cases.swift */; };
 		D16CAA002B76AFDA00615EC2 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16CA9FF2B76AFDA00615EC2 /* DrawingView.swift */; };
@@ -26,6 +31,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		271E2B212BE01A9400D802AD /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		271E2B232BE01FD700D802AD /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		271E2B252BE0218E00D802AD /* AccountSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSettingsView.swift; sourceTree = "<group>"; };
+		271E2B272BE0219C00D802AD /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
+		271E2B292BE021A900D802AD /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		C72A0A492B7C1FB40072A87C /* DropdownTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownTextView.swift; sourceTree = "<group>"; };
 		C7719B7C2B6AEAD400C5DD80 /* Enum-Cases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Enum-Cases.swift"; sourceTree = "<group>"; };
 		D16CA9FF2B76AFDA00615EC2 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
@@ -90,6 +100,11 @@
 				D16CAA012B76B16A00615EC2 /* Constants.swift */,
 				D16CAA052B76B83D00615EC2 /* ColorPickerView.swift */,
 				D19A7A742BCF00D400E03789 /* ThreeDButton.swift */,
+				271E2B292BE021A900D802AD /* NotificationsView.swift */,
+				271E2B272BE0219C00D802AD /* PreferencesView.swift */,
+				271E2B252BE0218E00D802AD /* AccountSettingsView.swift */,
+				271E2B232BE01FD700D802AD /* SettingsView.swift */,
+				271E2B212BE01A9400D802AD /* ProfileView.swift */,
 			);
 			path = CreativeApp;
 			sourceTree = "<group>";
@@ -185,7 +200,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				271E2B242BE01FD700D802AD /* SettingsView.swift in Sources */,
 				D1C93A9A2B681A22001734A2 /* ContentView.swift in Sources */,
+				271E2B282BE0219C00D802AD /* PreferencesView.swift in Sources */,
 				C7719B7D2B6AEAD400C5DD80 /* Enum-Cases.swift in Sources */,
 				D16CAA022B76B16A00615EC2 /* Constants.swift in Sources */,
 				D1C93AB12B6AC616001734A2 /* MenuListRow.swift in Sources */,
@@ -197,7 +214,10 @@
 				D16CAA002B76AFDA00615EC2 /* DrawingView.swift in Sources */,
 				D1C93AB72B6D6D7F001734A2 /* ActivitiesView.swift in Sources */,
 				D19A7A752BCF00D400E03789 /* ThreeDButton.swift in Sources */,
+				271E2B262BE0218E00D802AD /* AccountSettingsView.swift in Sources */,
+				271E2B222BE01A9400D802AD /* ProfileView.swift in Sources */,
 				D1C93AA72B681CA4001734A2 /* MenuOptions.swift in Sources */,
+				271E2B2A2BE021A900D802AD /* NotificationsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
