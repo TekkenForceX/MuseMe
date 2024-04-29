@@ -15,6 +15,9 @@
         }
       }
     },
+    "Back" : {
+
+    },
     "Burnout" : {
       "extractionState" : "manual",
       "localizations" : {
