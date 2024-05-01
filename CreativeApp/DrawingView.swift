@@ -19,6 +19,8 @@ struct DrawingView: View {
     @State private var lines: [Line] = []
     @State private var selectedColor: Color = .red
     @State private var thickness: Double = 5.0
+    @State private var isSharing = false // State to manage share sheet visibility
+    @State private var shareImage: UIImage? // Image to share
 
     var body: some View {
         NavigationStack {
@@ -26,7 +28,8 @@ struct DrawingView: View {
                 VStack {
                     Text("Draw Your Inspiration")
                         .font(.system(size: 30)).bold()
-                        .foregroundColor(.white)
+                        // Change the color here; example with blue
+                        .foregroundColor(.blue)
                         .padding(.top, 50)
 
                     Canvas { context, size in
@@ -53,37 +56,45 @@ struct DrawingView: View {
                     .cornerRadius(10)
                     .shadow(radius: 5)
 
-                    HStack {
-                        Slider(value: $thickness, in: 1...20)
-                            .frame(width: 200)
-
-                        ColorPicker("", selection: $selectedColor)
-
-                        Button("Save Drawing") {
-                            saveDrawing()
-                        }
-                        .padding()
-                        .background(Color.blue)
-                        .foregroundColor(.white)
-                        .cornerRadius(5)
-                    }
-                    .padding()
+                    Slider(value: $thickness, in: 1...20)
+                        .frame(width: 200)
+                    ColorPicker("", selection: $selectedColor)
                 }
-                .padding(20)
+                .padding()
                 .background(
                     Image("wavybg")
                         .resizable()
                         .scaledToFill()
-                        .frame(width: .infinity, height: 1000)
+                        .frame(width: .infinity, height: .infinity)
                         .edgesIgnoringSafeArea(.all)
                 )
             }
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button(action: {
+                        shareImage = generateImage()
+                        isSharing = true
+                    }) {
+                        Image(systemName: "square.and.arrow.up")
+                            .imageScale(.large)
+                    }
+                    .sheet(isPresented: $isSharing, onDismiss: {
+                        isSharing = false
+                    }) {
+                        if let shareImage = shareImage {
+                            ActivityView(activityItems: [shareImage] as [Any], applicationActivities: nil)
+                        }
+                    }
+                }
+            }
+            .navigationTitle("Draw Your Inspiration")
+            .navigationBarTitleDisplayMode(.inline)
         }
     }
 
-    func saveDrawing() {
+    func generateImage() -> UIImage {
         let renderer = UIGraphicsImageRenderer(size: CGSize(width: 380, height: 380))
-        let image = renderer.image { ctx in
+        return renderer.image { ctx in
             ctx.cgContext.setFillColor(UIColor.white.cgColor)
             ctx.cgContext.setStrokeColor(UIColor.black.cgColor)
             ctx.cgContext.setLineWidth(CGFloat(thickness))
@@ -98,9 +109,18 @@ struct DrawingView: View {
                 path.stroke()
             }
         }
-        
-        UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
     }
+}
+
+struct ActivityView: UIViewControllerRepresentable {
+    var activityItems: [Any]
+    var applicationActivities: [UIActivity]?
+
+    func makeUIViewController(context: Context) -> UIActivityViewController {
+        return UIActivityViewController(activityItems: activityItems, applicationActivities: applicationActivities)
+    }
+    
+    func updateUIViewController(_ uiViewController: UIActivityViewController, context: Context) {}
 }
 
 struct DrawingView_Previews: PreviewProvider {
