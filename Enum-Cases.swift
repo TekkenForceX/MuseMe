@@ -78,7 +78,7 @@
             case trophyCase =
                     "Trophy Case: \n  Think several of your favorite accomplishments and create a collage"
             case myOwnHero =
-               "My Own Hero: \n Draw yourself as a super hero "
+                    "My Own Hero: \n Draw yourself as a super hero "
             case whatIf =
                     "What if: \n Draw a random scenario where something went better than expected"
             case collaborativeCourage =
@@ -86,15 +86,15 @@
             
         //Inspiration
             case goalVision =
-            "Goal Vision: \n Illustrate an artistic goal you're excited about achieving"
+                    "Goal Vision: \n Illustrate an artistic goal you're excited about achieving"
             case joyReplay =
-            "Joy Replay: \n Capture a recent experience that made your heart sing"
+                    "Joy Replay: \n Capture a recent experience that made your heart sing"
             case mindsEye =
-            "Mind's Eye: \n Catch Draw the last fleeting thought that crossed your mind"
+                    "Mind's Eye: \n Catch Draw the last fleeting thought that crossed your mind"
             case dreamDestination =
-            "Dream Destination: \n Paint a picture of your ultimate artistic travel adventure"
+                    "Dream Destination: \n Paint a picture of your ultimate artistic travel adventure"
             case innerMuse =
-            "Inner Muse: \n Create a self-portrait in your most inspiring creative style"
+                    "Inner Muse: \n Create a self-portrait in your most inspiring creative style"
 
 
         }

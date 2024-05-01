@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+
     @State private var blockOption: DropDownMenuOption? = nil
     @State private var trigger = false
     @State private var isSettingsViewPresented = false
+
     
     var body: some View {
         NavigationStack {
@@ -70,6 +72,18 @@ struct ContentView: View {
                         }
                     }
                 }
+
+
+                .background(
+                    Image("background")
+                        .resizable()  // Make the image resizable
+                        .scaledToFill() // Scale the image to fill the view
+                    // Added frame and changed width to make the app fit
+                        .frame(width: .infinity, height: 884)
+                        .edgesIgnoringSafeArea(.all) // Let the image extend to the edges of the screen
+                        .blur(radius: /*@START_MENU_TOKEN@*/3.0/*@END_MENU_TOKEN@*/)
+                )
+
             }
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
