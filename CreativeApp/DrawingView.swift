@@ -6,7 +6,11 @@
 //
 
 import SwiftUI
+
 import UIKit
+
+import PencilKit
+
 
 struct Line {
     var points = [CGPoint]()

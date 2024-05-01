@@ -47,41 +47,52 @@ struct ContentView: View {
                     NavigationLink {
                         ActivitiesView(prompt: blockOption ?? DropDownMenuOption(option: "Lack of inspiration", enumOption: .MuseMe))
                     } label: {
-                        ZStack {
-                            Circle()
-                                .frame(width: 275)
-                                .foregroundColor(.cyan)
-                                .opacity(0.9)
-                                .shadow(color: .black, radius: 2)
+                        
+                        Button("") {
                             
-                            Circle()
-                                .stroke(.cyan, lineWidth: 10)
-                                .shadow(color: .black, radius: 50)
-                                .frame(width: 275)
-                            Circle()
-                                .stroke(.babyGreen, lineWidth: 1)
-                                .shadow(color: .black, radius: 50)
-                                .frame(width: 285)
-                            
-                            Text("Generate Muse")
-                                .font(.largeTitle.bold())
-                                .shadow(color: .black, radius: 1)
-                                .frame(width: 200)
-                                .foregroundColor(.white)
-                                .sensoryFeedback(.success, trigger: trigger)
                         }
+                        
+                        .foregroundColor(.white)
+                        .frame(width: 400, height: 350)
+                        .buttonStyle(ThreeD())
+                        .disabled(true)
+                        .offset(y: -100)
+
+//                        ZStack {
+//                            Circle()
+//                                .frame(width: 275)
+//                                .foregroundColor(.cyan)
+//                                .opacity(0.9)
+//                                .shadow(color: .black, radius: 2)
+//                            
+//                            Circle()
+//                                .stroke(.cyan, lineWidth: 10)
+//                                .shadow(color: .black, radius: 50)
+//                                .frame(width: 275)
+//                            Circle()
+//                                .stroke(.babyGreen, lineWidth: 1)
+//                                .shadow(color: .black, radius: 50)
+//                                .frame(width: 285)
+//                            
+//                            Text("Generate Muse")
+//                                .font(.largeTitle.bold())
+//                                .shadow(color: .black, radius: 1)
+//                                .frame(width: 200)
+//                                .foregroundColor(.white)
+//                                .sensoryFeedback(.success, trigger: trigger)
+//                        }
                     }
                 }
 
 
                 .background(
-                    Image("background")
+                    Image("wavybg")
                         .resizable()  // Make the image resizable
                         .scaledToFill() // Scale the image to fill the view
                     // Added frame and changed width to make the app fit
-                        .frame(width: .infinity, height: 884)
+                        .frame(width: .infinity, height: 850)
                         .edgesIgnoringSafeArea(.all) // Let the image extend to the edges of the screen
-                        .blur(radius: /*@START_MENU_TOKEN@*/3.0/*@END_MENU_TOKEN@*/)
+//                        .blur(radius: /*@START_MENU_TOKEN@*/3.0/*@END_MENU_TOKEN@*/)
                 )
 
             }
