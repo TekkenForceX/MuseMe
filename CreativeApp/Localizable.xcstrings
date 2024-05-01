@@ -4,6 +4,9 @@
     "" : {
 
     },
+    "Account Settings" : {
+
+    },
     "Anxious" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -29,10 +32,40 @@
         }
       }
     },
+    "Button" : {
+
+    },
+    "Change Password" : {
+
+    },
+    "Confirm Password" : {
+
+    },
+    "Dark Mode" : {
+
+    },
+    "Display Options" : {
+
+    },
     "Draw Your Inspiration" : {
 
     },
     "Draw your muse!" : {
+
+    },
+    "Email" : {
+
+    },
+    "Email Notifications" : {
+
+    },
+    "English" : {
+
+    },
+    "Event Reminders" : {
+
+    },
+    "French" : {
 
     },
     "Generate Muse" : {
@@ -46,6 +79,9 @@
         }
       }
     },
+    "German" : {
+
+    },
     "Lack of inspiration" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -56,6 +92,9 @@
           }
         }
       }
+    },
+    "Language" : {
+
     },
     "Let my creativity flow" : {
       "extractionState" : "manual",
@@ -79,6 +118,15 @@
         }
       }
     },
+    "Login" : {
+
+    },
+    "Logout" : {
+
+    },
+    "Monthly Newsletter" : {
+
+    },
     "Muse Me" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -89,6 +137,24 @@
           }
         }
       }
+    },
+    "New Password" : {
+
+    },
+    "Notification Preferences" : {
+
+    },
+    "Notification Settings" : {
+
+    },
+    "Notifications" : {
+
+    },
+    "OK" : {
+
+    },
+    "Other Preferences" : {
+
     },
     "Perfectionism" : {
       "extractionState" : "manual",
@@ -101,6 +167,21 @@
         }
       }
     },
+    "Preferences" : {
+
+    },
+    "Profile" : {
+
+    },
+    "Profile Details" : {
+
+    },
+    "Push Notifications" : {
+
+    },
+    "Save Changes" : {
+
+    },
     "Self doubt" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -111,6 +192,21 @@
           }
         }
       }
+    },
+    "Settings" : {
+
+    },
+    "Spanish" : {
+
+    },
+    "Special Offers" : {
+
+    },
+    "Update" : {
+
+    },
+    "Username" : {
+
     },
     "What is blocking you?" : {
       "extractionState" : "manual",
