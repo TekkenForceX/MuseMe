@@ -18,9 +18,6 @@
         }
       }
     },
-    "Back" : {
-
-    },
     "Burnout" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -31,9 +28,6 @@
           }
         }
       }
-    },
-    "Button" : {
-
     },
     "Change Password" : {
 

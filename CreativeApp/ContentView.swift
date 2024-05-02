@@ -18,7 +18,7 @@ struct ContentView: View {
         NavigationStack {
             ZStack {
                 // Background
-                Image("wavybg")
+                Image("background")
                     .resizable()
                     .scaledToFill()
                     .edgesIgnoringSafeArea(.all)
@@ -27,20 +27,20 @@ struct ContentView: View {
                 // Main content
                 VStack {
                     ZStack {
-                        Text("Muse Me")
-                            .font(.system(size: 80)).bold()
+                        Text("What's blocking you?")
+                            .font(.system(size: 35)).bold()
                             .foregroundColor(.cyan)
                             .padding(.leading)
                             .offset(x: 3, y: 3)
                         
-                        Text("Muse Me")
-                            .font(.system(size: 80)).bold()
+                        Text("What's blocking you?")
+                            .font(.system(size: 35)).bold()
                             .foregroundColor(.white)
                             .padding(.leading)
                     }
                     DropdownMenu(
                         selectedOption: $blockOption,
-                        placeholder: "What's blocking you?",
+                        placeholder: "Pick a Category",
                         options: DropDownMenuOption.creativeBlockOptions
                     )
 

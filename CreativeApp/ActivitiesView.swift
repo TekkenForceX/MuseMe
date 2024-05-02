@@ -16,7 +16,7 @@ struct ActivitiesView: View {
         NavigationStack {
             ZStack {
                
-                Image("wavybg")
+                Image("background")
                     .resizable()
                     .scaledToFill()
                     .frame(width: .infinity, height: 880)
