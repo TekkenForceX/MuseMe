@@ -15,6 +15,8 @@
 		27EFEA4E2BE55FF600510C78 /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EFEA4D2BE55FF600510C78 /* CloudKitManager.swift */; };
 		27EFEA502BE5602A00510C78 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EFEA4F2BE5602A00510C78 /* UIImage+Extensions.swift */; };
 		27EFEA522BE5608E00510C78 /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EFEA512BE5608E00510C78 /* DrawingViewController.swift */; };
+		27EFEA542BE5648000510C78 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EFEA532BE5648000510C78 /* AuthenticationManager.swift */; };
+		27EFEA562BE564B100510C78 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EFEA552BE564B100510C78 /* LoginView.swift */; };
 		C72A0A4A2B7C1FB40072A87C /* DropdownTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A0A492B7C1FB40072A87C /* DropdownTextView.swift */; };
 		C7719B7D2B6AEAD400C5DD80 /* Enum-Cases.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7719B7C2B6AEAD400C5DD80 /* Enum-Cases.swift */; };
 		D16CAA002B76AFDA00615EC2 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16CA9FF2B76AFDA00615EC2 /* DrawingView.swift */; };
@@ -44,6 +46,8 @@
 		27EFEA4D2BE55FF600510C78 /* CloudKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitManager.swift; sourceTree = "<group>"; };
 		27EFEA4F2BE5602A00510C78 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		27EFEA512BE5608E00510C78 /* DrawingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingViewController.swift; sourceTree = "<group>"; };
+		27EFEA532BE5648000510C78 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		27EFEA552BE564B100510C78 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		C72A0A492B7C1FB40072A87C /* DropdownTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownTextView.swift; sourceTree = "<group>"; };
 		C7719B7C2B6AEAD400C5DD80 /* Enum-Cases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Enum-Cases.swift"; sourceTree = "<group>"; };
 		D16CA9FF2B76AFDA00615EC2 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
@@ -80,6 +84,8 @@
 		D1C93A8B2B681A22001734A2 = {
 			isa = PBXGroup;
 			children = (
+				27EFEA552BE564B100510C78 /* LoginView.swift */,
+				27EFEA532BE5648000510C78 /* AuthenticationManager.swift */,
 				D1A3E1952BE3FAA900BB4BC9 /* Launch Screen.storyboard */,
 				D19A7A732BCDAFD600E03789 /* MuseMe-Info.plist */,
 				C7719B7C2B6AEAD400C5DD80 /* Enum-Cases.swift */,
@@ -222,6 +228,7 @@
 				27EFEA502BE5602A00510C78 /* UIImage+Extensions.swift in Sources */,
 				C7719B7D2B6AEAD400C5DD80 /* Enum-Cases.swift in Sources */,
 				D16CAA022B76B16A00615EC2 /* Constants.swift in Sources */,
+				27EFEA562BE564B100510C78 /* LoginView.swift in Sources */,
 				D1C93AB12B6AC616001734A2 /* MenuListRow.swift in Sources */,
 				D1C93A982B681A22001734A2 /* CreativeAppApp.swift in Sources */,
 				D1C93AA92B681F2C001734A2 /* Menu.swift in Sources */,
@@ -237,6 +244,7 @@
 				271E2B262BE0218E00D802AD /* AccountSettingsView.swift in Sources */,
 				271E2B222BE01A9400D802AD /* ProfileView.swift in Sources */,
 				D1C93AA72B681CA4001734A2 /* MenuOptions.swift in Sources */,
+				27EFEA542BE5648000510C78 /* AuthenticationManager.swift in Sources */,
 				271E2B2A2BE021A900D802AD /* NotificationsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

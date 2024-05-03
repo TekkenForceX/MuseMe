@@ -150,6 +150,9 @@
     "OK" : {
 
     },
+    "Open Settings" : {
+
+    },
     "Other Preferences" : {
 
     },
@@ -205,6 +208,9 @@
     "Username" : {
 
     },
+    "Welcome to the app!" : {
+
+    },
     "What is blocking you?" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -217,6 +223,9 @@
       }
     },
     "What's blocking you?" : {
+
+    },
+    "You need to log into iCloud to use this app." : {
 
     }
   },
