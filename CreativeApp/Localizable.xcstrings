@@ -76,6 +76,9 @@
     "German" : {
 
     },
+    "Hello, World!" : {
+
+    },
     "Lack of inspiration" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -212,6 +215,9 @@
           }
         }
       }
+    },
+    "What's blocking you?" : {
+
     }
   },
   "version" : "1.0"

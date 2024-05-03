@@ -12,6 +12,12 @@ import UIKit
 import PencilKit
 
 
+struct Drawing {
+    var title: String
+    var image: UIImage
+}
+
+
 struct Line {
     var points = [CGPoint]()
     var color: Color = .red

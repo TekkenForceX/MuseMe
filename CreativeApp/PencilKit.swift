@@ -6,14 +6,16 @@
 //
 
 import SwiftUI
-import
+import PencilKit  // Assuming you want to use the actual PencilKit framework
 
-struct PencilKit: View {
+struct MyPencilKitView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Hello, World!")
     }
 }
 
-#Preview {
-    PencilKit()
+struct MyPencilKitView_Previews: PreviewProvider {
+    static var previews: some View {
+        MyPencilKitView()
+    }
 }
