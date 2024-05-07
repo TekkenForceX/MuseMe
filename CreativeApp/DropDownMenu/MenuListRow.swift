@@ -32,7 +32,7 @@ struct DropdownMenuListRow: View {
                 Text(menuText)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .foregroundColor(.white)
-                    .font(.title3)
+                    .font(.largeTitle)
                     .bold()
             }
             .foregroundColor(.black)

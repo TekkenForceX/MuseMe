@@ -14,12 +14,13 @@
 		271E2B2A2BE021A900D802AD /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271E2B292BE021A900D802AD /* NotificationsView.swift */; };
 		C72A0A4A2B7C1FB40072A87C /* DropdownTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A0A492B7C1FB40072A87C /* DropdownTextView.swift */; };
 		C7719B7D2B6AEAD400C5DD80 /* Enum-Cases.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7719B7C2B6AEAD400C5DD80 /* Enum-Cases.swift */; };
+		D11BD5CD2BE95E55000EA58B /* FreeFormDrawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11BD5CC2BE95E55000EA58B /* FreeFormDrawing.swift */; };
+		D11BD5CF2BE96863000EA58B /* FaceBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11BD5CE2BE96863000EA58B /* FaceBoard.swift */; };
 		D16CAA002B76AFDA00615EC2 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16CA9FF2B76AFDA00615EC2 /* DrawingView.swift */; };
 		D16CAA022B76B16A00615EC2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16CAA012B76B16A00615EC2 /* Constants.swift */; };
 		D16CAA062B76B83D00615EC2 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16CAA052B76B83D00615EC2 /* ColorPickerView.swift */; };
 		D19A7A752BCF00D400E03789 /* ThreeDButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19A7A742BCF00D400E03789 /* ThreeDButton.swift */; };
 		D1A3E1962BE3FAA900BB4BC9 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1A3E1952BE3FAA900BB4BC9 /* Launch Screen.storyboard */; };
-		D1A3E1982BE41D9900BB4BC9 /* PencilKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A3E1972BE41D9900BB4BC9 /* PencilKit.swift */; };
 		D1C93A982B681A22001734A2 /* CreativeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C93A972B681A22001734A2 /* CreativeAppApp.swift */; };
 		D1C93A9A2B681A22001734A2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C93A992B681A22001734A2 /* ContentView.swift */; };
 		D1C93A9C2B681A24001734A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1C93A9B2B681A24001734A2 /* Assets.xcassets */; };
@@ -40,13 +41,14 @@
 		271E2B292BE021A900D802AD /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
 		C72A0A492B7C1FB40072A87C /* DropdownTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownTextView.swift; sourceTree = "<group>"; };
 		C7719B7C2B6AEAD400C5DD80 /* Enum-Cases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Enum-Cases.swift"; sourceTree = "<group>"; };
+		D11BD5CC2BE95E55000EA58B /* FreeFormDrawing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeFormDrawing.swift; sourceTree = "<group>"; };
+		D11BD5CE2BE96863000EA58B /* FaceBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceBoard.swift; sourceTree = "<group>"; };
 		D16CA9FF2B76AFDA00615EC2 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		D16CAA012B76B16A00615EC2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D16CAA052B76B83D00615EC2 /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 		D19A7A732BCDAFD600E03789 /* MuseMe-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MuseMe-Info.plist"; sourceTree = "<group>"; };
 		D19A7A742BCF00D400E03789 /* ThreeDButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDButton.swift; sourceTree = "<group>"; };
 		D1A3E1952BE3FAA900BB4BC9 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		D1A3E1972BE41D9900BB4BC9 /* PencilKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PencilKit.swift; sourceTree = "<group>"; };
 		D1C93A942B681A22001734A2 /* MuseMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuseMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1C93A972B681A22001734A2 /* CreativeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreativeAppApp.swift; sourceTree = "<group>"; };
 		D1C93A992B681A22001734A2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,6 +76,8 @@
 		D1C93A8B2B681A22001734A2 = {
 			isa = PBXGroup;
 			children = (
+				D11BD5CE2BE96863000EA58B /* FaceBoard.swift */,
+				D11BD5CC2BE95E55000EA58B /* FreeFormDrawing.swift */,
 				D1A3E1952BE3FAA900BB4BC9 /* Launch Screen.storyboard */,
 				D19A7A732BCDAFD600E03789 /* MuseMe-Info.plist */,
 				C7719B7C2B6AEAD400C5DD80 /* Enum-Cases.swift */,
@@ -110,7 +114,6 @@
 				271E2B252BE0218E00D802AD /* AccountSettingsView.swift */,
 				271E2B232BE01FD700D802AD /* SettingsView.swift */,
 				271E2B212BE01A9400D802AD /* ProfileView.swift */,
-				D1A3E1972BE41D9900BB4BC9 /* PencilKit.swift */,
 			);
 			path = CreativeApp;
 			sourceTree = "<group>";
@@ -216,7 +219,7 @@
 				D1C93A982B681A22001734A2 /* CreativeAppApp.swift in Sources */,
 				D1C93AA92B681F2C001734A2 /* Menu.swift in Sources */,
 				C72A0A4A2B7C1FB40072A87C /* DropdownTextView.swift in Sources */,
-				D1A3E1982BE41D9900BB4BC9 /* PencilKit.swift in Sources */,
+				D11BD5CF2BE96863000EA58B /* FaceBoard.swift in Sources */,
 				D1C93AAF2B6AC4B5001734A2 /* MenuList.swift in Sources */,
 				D16CAA062B76B83D00615EC2 /* ColorPickerView.swift in Sources */,
 				D16CAA002B76AFDA00615EC2 /* DrawingView.swift in Sources */,
@@ -226,6 +229,7 @@
 				271E2B222BE01A9400D802AD /* ProfileView.swift in Sources */,
 				D1C93AA72B681CA4001734A2 /* MenuOptions.swift in Sources */,
 				271E2B2A2BE021A900D802AD /* NotificationsView.swift in Sources */,
+				D11BD5CD2BE95E55000EA58B /* FreeFormDrawing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

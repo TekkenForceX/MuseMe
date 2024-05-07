@@ -73,6 +73,8 @@ struct DrawingView: View {
                         .edgesIgnoringSafeArea(.all)
                 )
             }
+            
+            
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button(action: {
@@ -91,6 +93,7 @@ struct DrawingView: View {
                     }
                 }
             }
+            
             .navigationTitle("Draw Your Inspiration")
             .navigationBarTitleDisplayMode(.inline)
         }

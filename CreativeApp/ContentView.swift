@@ -28,13 +28,13 @@ struct ContentView: View {
                 VStack {
                     ZStack {
                         Text("What's blocking you?")
-                            .font(.system(size: 35)).bold()
+                            .font(.system(size: 50)).bold()
                             .foregroundColor(.cyan)
                             .padding(.leading)
                             .offset(x: 3, y: 3)
                         
                         Text("What's blocking you?")
-                            .font(.system(size: 35)).bold()
+                            .font(.system(size: 50)).bold()
                             .foregroundColor(.white)
                             .padding(.leading)
                     }
@@ -53,10 +53,10 @@ struct ContentView: View {
                         }
                         
                         .foregroundColor(.white)
-                        .frame(width: 400, height: 350)
+                        .frame(width: 200, height: 500)
                         .buttonStyle(ThreeD())
                         .disabled(true)
-                        .offset(y: -100)
+                        .offset(y: 10)
 
 //                        ZStack {
 //                            Circle()
@@ -86,11 +86,11 @@ struct ContentView: View {
 
 
                 .background(
-                    Image("wavybg")
+                    Image("background")
                         .resizable()  // Make the image resizable
                         .scaledToFill() // Scale the image to fill the view
                     // Added frame and changed width to make the app fit
-                        .frame(width: .infinity, height: 850)
+                        .frame(width: .infinity, height: 2400)
                         .edgesIgnoringSafeArea(.all) // Let the image extend to the edges of the screen
 //                        .blur(radius: /*@START_MENU_TOKEN@*/3.0/*@END_MENU_TOKEN@*/)
                 )
@@ -102,12 +102,14 @@ struct ContentView: View {
                         isSettingsViewPresented = true
                     }) {
                         Image(systemName: "gearshape.fill")  // Updated to use a filled gear icon
+                            .resizable()
+                            .frame(width: 50, height: 50)
                     }
                 }
             }
-            .background(
-                NavigationLink(destination: SettingsView(), isActive: $isSettingsViewPresented) { EmptyView() }
-            )
+//            .background(
+//                NavigationLink(destination: SettingsView(), isActive: $isSettingsViewPresented) { EmptyView() }
+//            )
         }
     }
 }

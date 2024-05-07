@@ -26,15 +26,15 @@ struct ActivitiesView: View {
                         .foregroundColor(.white)
                         .bold()
                         .multilineTextAlignment(.center)
-                        .font(.title)
-                        .font(.system(size: 12, weight: .regular, design: .default))
+                        .font(.largeTitle)
+                        .font(.system(size: 24, weight: .regular, design: .default))
 //                        .clipShape(RoundedRectangle (cornerSize: CGSize(width: 10, height: 10)))
                         .padding(.bottom, 40)
                         .padding()
                         
 
                     NavigationLink {
-                        DrawingView()
+                        FreeFormDrawingView()
                     } label: {
                         ZStack {
                             Circle()
