@@ -27,16 +27,26 @@ struct ContentView: View {
                 // Main content
                 VStack {
                     ZStack {
-                        Text("What's blocking you?")
-                            .font(.system(size: 35)).bold()
-                            .foregroundColor(.cyan)
-                            .padding(.leading)
-                            .offset(x: 3, y: 3)
+//                        Text("What's blocking you?")
+//                            .font(.system(size: 35)).bold()
+//                            .foregroundColor(.cyan)
+//                            .padding(.leading)
+//                            .offset(x: 3, y: 3)
                         
-                        Text("What's blocking you?")
-                            .font(.system(size: 35)).bold()
-                            .foregroundColor(.white)
-                            .padding(.leading)
+//                        Text("What's blocking you?")
+//                            .font(.system(size: 35)).bold()
+//                            .foregroundColor(.white)
+//                            .padding(.leading)
+
+                    
+                        Image("wby")
+                            .resizable()
+                            .scaledToFit()
+//                        Text("Muse Me")
+//                            .font(.system(size: 80)).bold()
+//                            .foregroundColor(.white)
+//                            .padding(.leading)
+
                     }
                     DropdownMenu(
                         selectedOption: $blockOption,

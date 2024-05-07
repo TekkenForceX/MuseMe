@@ -37,23 +37,26 @@ struct ActivitiesView: View {
                         DrawingView()
                     } label: {
                         ZStack {
-                            Circle()
-                            
-                                .frame(width: 275)
-                                .foregroundColor(.cyan)
-                                .opacity(0.9)
-                                .shadow(color: .black,radius: 2)
-    
-                            Circle()
-                            
-                                .stroke(Color.cyan, lineWidth: 10)
-                                .shadow(color: .black,radius: 50)
-                                .frame(width: 275)
-                            Text("Draw your muse!")
-                                .font(.largeTitle.bold())
-                                .shadow(color: .black,radius: 1)
-                                .frame(width: 200)
-                                .foregroundColor(.white)
+                            HStack{
+                                Image(systemName:"play")
+                            }
+//                            Circle()
+//                            
+//                                .frame(width: 275)
+//                                .foregroundColor(.cyan)
+//                                .opacity(0.9)
+//                                .shadow(color: .black,radius: 2)
+//    
+//                            Circle()
+//                            
+//                                .stroke(Color.cyan, lineWidth: 10)
+//                                .shadow(color: .black,radius: 50)
+//                                .frame(width: 275)
+//                            Text("Draw your muse!")
+//                                .font(.largeTitle.bold())
+//                                .shadow(color: .black,radius: 1)
+//                                .frame(width: 200)
+//                                .foregroundColor(.white)
                         }
                     }
                 }.padding()
