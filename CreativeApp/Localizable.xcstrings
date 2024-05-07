@@ -32,7 +32,13 @@
     "Change Password" : {
 
     },
+    "Color" : {
+
+    },
     "Confirm Password" : {
+
+    },
+    "Crayon" : {
 
     },
     "Dark Mode" : {
@@ -57,6 +63,9 @@
 
     },
     "Event Reminders" : {
+
+    },
+    "Fountain" : {
 
     },
     "French" : {
@@ -121,6 +130,12 @@
     "Logout" : {
 
     },
+    "Marker" : {
+
+    },
+    "Monoline" : {
+
+    },
     "Monthly Newsletter" : {
 
     },
@@ -153,6 +168,12 @@
     "Other Preferences" : {
 
     },
+    "Pen" : {
+
+    },
+    "Pencil" : {
+
+    },
     "Perfectionism" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -164,6 +185,9 @@
         }
       }
     },
+    "Pick color" : {
+
+    },
     "Preferences" : {
 
     },
@@ -174,6 +198,9 @@
 
     },
     "Push Notifications" : {
+
+    },
+    "Save" : {
 
     },
     "Save Changes" : {
@@ -203,6 +230,9 @@
 
     },
     "Username" : {
+
+    },
+    "Watercolor" : {
 
     },
     "What is blocking you?" : {

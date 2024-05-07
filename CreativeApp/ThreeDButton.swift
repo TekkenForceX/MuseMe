@@ -17,13 +17,13 @@ struct ThreeD: ButtonStyle {
             Image("button1")
                 .resizable()
                 .offset(y: 8)
-                .frame(width: 200, height: 200)
+                .frame(width: 400, height: 400)
             
             Image("button1")
                 .resizable()
                 .offset(y: 5)
                 .offset(y: configuration.isPressed ? 5 : 0)
-                .frame(width: 200, height: 200)
+                .frame(width: 400, height: 400)
             
             configuration.label
                 .offset(y: configuration.isPressed ? 5 : 0)
@@ -51,7 +51,7 @@ struct ThreeDButton_Previews: PreviewProvider {
                 //.blur(radius: /*@START_MENU_TOKEN@*/3.0/*@END_MENU_TOKEN@*/)
         )
         .foregroundColor(.white)
-        .frame(width: 500, height: 100)
+        .frame(width: 1000, height: 200)
         .buttonStyle(ThreeD())
     }
 }

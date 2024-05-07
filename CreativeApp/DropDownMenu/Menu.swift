@@ -32,7 +32,7 @@ struct DropdownMenu: View {
                 Text(selectedOption == nil ? placeholder : selectedOption!.option)
                     .fontWeight(.medium)
                     .foregroundColor(selectedOption == nil ? .white : .white)
-                    .font(.title3)
+                    .font(.largeTitle)
                     .bold()
                     .environment(\.locale, Locale(identifier: "zh-Hans"))
                 
@@ -55,7 +55,7 @@ struct DropdownMenu: View {
         .overlay(alignment: .top) {
             VStack {
                 if self.isOptionsPresented {
-                    Spacer(minLength: 60)
+                    Spacer(minLength: 70)
                     DropdownMenuList(options: self.options) { option in
                         self.isOptionsPresented = false
                         self.selectedOption = option
@@ -71,11 +71,11 @@ struct DropdownMenu: View {
             .bottom, self.isOptionsPresented
             // If options list is open, then check if options size is greater
             // than 300 (MAX HEIGHT - CONSTANT), or not
-            ? CGFloat(self.options.count * 32) > 300
+            ? CGFloat(self.options.count * 70) > 300
                 // IF true, then set padding to max height 300 points
                 ? 300 + 30 // max height + more padding to set space between borders and text
                 // IF false, then calculate options size and set padding
-                : CGFloat(self.options.count * 32) + 30
+                : CGFloat(self.options.count * 70) + 30
             // If option list is closed, then don't set any padding.
             : 190
         )
