@@ -19,6 +19,7 @@
 		C7719B7D2B6AEAD400C5DD80 /* Enum-Cases.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7719B7C2B6AEAD400C5DD80 /* Enum-Cases.swift */; };
 		D11BD5CD2BE95E55000EA58B /* FreeFormDrawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11BD5CC2BE95E55000EA58B /* FreeFormDrawing.swift */; };
 		D11BD5CF2BE96863000EA58B /* FaceBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11BD5CE2BE96863000EA58B /* FaceBoard.swift */; };
+		D11BD5D22BEABBF1000EA58B /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11BD5D12BEABBF1000EA58B /* DrawingViewController.swift */; };
 		D16CAA002B76AFDA00615EC2 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16CA9FF2B76AFDA00615EC2 /* DrawingView.swift */; };
 		D16CAA022B76B16A00615EC2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16CAA012B76B16A00615EC2 /* Constants.swift */; };
 		D16CAA062B76B83D00615EC2 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16CAA052B76B83D00615EC2 /* ColorPickerView.swift */; };
@@ -49,6 +50,7 @@
 		C7719B7C2B6AEAD400C5DD80 /* Enum-Cases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Enum-Cases.swift"; sourceTree = "<group>"; };
 		D11BD5CC2BE95E55000EA58B /* FreeFormDrawing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeFormDrawing.swift; sourceTree = "<group>"; };
 		D11BD5CE2BE96863000EA58B /* FaceBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceBoard.swift; sourceTree = "<group>"; };
+		D11BD5D12BEABBF1000EA58B /* DrawingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingViewController.swift; sourceTree = "<group>"; };
 		D16CA9FF2B76AFDA00615EC2 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		D16CAA012B76B16A00615EC2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D16CAA052B76B83D00615EC2 /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
@@ -79,9 +81,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D11BD5D02BEAB37C000EA58B /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				27EFEA512BE5608E00510C78 /* DrawingViewController.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		D1C93A8B2B681A22001734A2 = {
 			isa = PBXGroup;
 			children = (
+				D11BD5D12BEABBF1000EA58B /* DrawingViewController.swift */,
 				D11BD5CE2BE96863000EA58B /* FaceBoard.swift */,
 				D11BD5CC2BE95E55000EA58B /* FreeFormDrawing.swift */,
 				D1A3E1952BE3FAA900BB4BC9 /* Launch Screen.storyboard */,
@@ -89,6 +100,7 @@
 				C7719B7C2B6AEAD400C5DD80 /* Enum-Cases.swift */,
 				D1C93A962B681A22001734A2 /* CreativeApp */,
 				D1C93A952B681A22001734A2 /* Products */,
+				D11BD5D02BEAB37C000EA58B /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,12 +132,8 @@
 				271E2B252BE0218E00D802AD /* AccountSettingsView.swift */,
 				271E2B232BE01FD700D802AD /* SettingsView.swift */,
 				271E2B212BE01A9400D802AD /* ProfileView.swift */,
-
-
-				
 				27EFEA4F2BE5602A00510C78 /* UIImage+Extensions.swift */,
 				27EFEA4D2BE55FF600510C78 /* CloudKitManager.swift */,
-
 			);
 			path = CreativeApp;
 			sourceTree = "<group>";
@@ -223,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				271E2B242BE01FD700D802AD /* SettingsView.swift in Sources */,
+				D11BD5D22BEABBF1000EA58B /* DrawingViewController.swift in Sources */,
 				D1C93A9A2B681A22001734A2 /* ContentView.swift in Sources */,
 				271E2B282BE0219C00D802AD /* PreferencesView.swift in Sources */,
 				27EFEA502BE5602A00510C78 /* UIImage+Extensions.swift in Sources */,

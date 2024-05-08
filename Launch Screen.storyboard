@@ -31,6 +31,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="wtL-3C-ULN">
                                 <rect key="frame" x="345" y="473" width="334" height="420"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
