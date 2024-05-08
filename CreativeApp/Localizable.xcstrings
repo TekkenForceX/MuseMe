@@ -121,6 +121,9 @@
         }
       }
     },
+    "Log In" : {
+
+    },
     "Login" : {
 
     },
@@ -163,6 +166,9 @@
 
     },
     "Other Preferences" : {
+
+    },
+    "Password" : {
 
     },
     "Pen" : {
@@ -217,6 +223,9 @@
     "Settings" : {
 
     },
+    "Sign Up" : {
+
+    },
     "Spanish" : {
 
     },
@@ -230,6 +239,9 @@
 
     },
     "Watercolor" : {
+
+    },
+    "Welcome Back!" : {
 
     },
     "What is blocking you?" : {
