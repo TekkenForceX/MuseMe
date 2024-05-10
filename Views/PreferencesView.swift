@@ -16,7 +16,7 @@ struct PreferencesView: View {
         Form {
             Section(header: Text("Display Options")) {
                 Toggle("Dark Mode", isOn: $darkModeEnabled)
-                    .onChange(of: darkModeEnabled) { value in
+                    .onChange(of: darkModeEnabled) { value, _ in
                         UIApplication.shared.windows.first?.overrideUserInterfaceStyle = value ? .dark : .light
                     }
                 Picker("Language", selection: $languagePreference) {
@@ -33,7 +33,7 @@ struct PreferencesView: View {
             }
         }
         .navigationTitle("Preferences")
-        .onChange(of: languagePreference) { newValue in
+        .onChange(of: languagePreference) { newValue, _ in
             setAppLanguage(to: newValue)
         }
     }

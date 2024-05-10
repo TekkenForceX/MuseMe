@@ -57,9 +57,9 @@ struct SignUpView: View {
             // Check if the input is valid (basic example)
             self.isInputValid = !username.isEmpty && !email.isEmpty && !password.isEmpty
         }
-        .onChange(of: username) { _ in self.validateInput() }
-        .onChange(of: email) { _ in self.validateInput() }
-        .onChange(of: password) { _ in self.validateInput() }
+        .onChange(of: username) { _, _ in self.validateInput() }
+        .onChange(of: email) { _, _ in self.validateInput() }
+        .onChange(of: password) { _, _ in self.validateInput() }
     }
     
     private func validateInput() {
