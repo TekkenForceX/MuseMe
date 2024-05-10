@@ -18,15 +18,13 @@
 		279FF35B2BEBF28600771A51 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279FF35A2BEBF28600771A51 /* App.swift */; };
 		27EFEA4E2BE55FF600510C78 /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EFEA4D2BE55FF600510C78 /* CloudKitManager.swift */; };
 		27EFEA502BE5602A00510C78 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EFEA4F2BE5602A00510C78 /* UIImage+Extensions.swift */; };
-		27EFEA522BE5608E00510C78 /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EFEA512BE5608E00510C78 /* DrawingViewController.swift */; };
+		6250B74F2BEEBBE1006F1AE9 /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6250B74E2BEEBBE1006F1AE9 /* DrawingViewController.swift */; };
 		C72A0A4A2B7C1FB40072A87C /* DropdownTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A0A492B7C1FB40072A87C /* DropdownTextView.swift */; };
 		C7719B7D2B6AEAD400C5DD80 /* Enum-Cases.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7719B7C2B6AEAD400C5DD80 /* Enum-Cases.swift */; };
 		D11BD5CD2BE95E55000EA58B /* FreeFormDrawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11BD5CC2BE95E55000EA58B /* FreeFormDrawing.swift */; };
 		D11BD5CF2BE96863000EA58B /* FaceBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11BD5CE2BE96863000EA58B /* FaceBoard.swift */; };
-		D11BD5D22BEABBF1000EA58B /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11BD5D12BEABBF1000EA58B /* DrawingViewController.swift */; };
 		D16CAA002B76AFDA00615EC2 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16CA9FF2B76AFDA00615EC2 /* DrawingView.swift */; };
 		D16CAA022B76B16A00615EC2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16CAA012B76B16A00615EC2 /* Constants.swift */; };
-		D16CAA062B76B83D00615EC2 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16CAA052B76B83D00615EC2 /* ColorPickerView.swift */; };
 		D19A7A752BCF00D400E03789 /* ThreeDButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19A7A742BCF00D400E03789 /* ThreeDButton.swift */; };
 		D1A3E1962BE3FAA900BB4BC9 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1A3E1952BE3FAA900BB4BC9 /* Launch Screen.storyboard */; };
 		D1C93A982B681A22001734A2 /* CreativeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C93A972B681A22001734A2 /* CreativeAppApp.swift */; };
@@ -53,15 +51,13 @@
 		279FF35A2BEBF28600771A51 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		27EFEA4D2BE55FF600510C78 /* CloudKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitManager.swift; sourceTree = "<group>"; };
 		27EFEA4F2BE5602A00510C78 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
-		27EFEA512BE5608E00510C78 /* DrawingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingViewController.swift; sourceTree = "<group>"; };
+		6250B74E2BEEBBE1006F1AE9 /* DrawingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingViewController.swift; sourceTree = "<group>"; };
 		C72A0A492B7C1FB40072A87C /* DropdownTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownTextView.swift; sourceTree = "<group>"; };
 		C7719B7C2B6AEAD400C5DD80 /* Enum-Cases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Enum-Cases.swift"; sourceTree = "<group>"; };
 		D11BD5CC2BE95E55000EA58B /* FreeFormDrawing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeFormDrawing.swift; sourceTree = "<group>"; };
 		D11BD5CE2BE96863000EA58B /* FaceBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceBoard.swift; sourceTree = "<group>"; };
-		D11BD5D12BEABBF1000EA58B /* DrawingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingViewController.swift; sourceTree = "<group>"; };
 		D16CA9FF2B76AFDA00615EC2 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		D16CAA012B76B16A00615EC2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		D16CAA052B76B83D00615EC2 /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 		D19A7A732BCDAFD600E03789 /* MuseMe-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MuseMe-Info.plist"; sourceTree = "<group>"; };
 		D19A7A742BCF00D400E03789 /* ThreeDButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDButton.swift; sourceTree = "<group>"; };
 		D1A3E1952BE3FAA900BB4BC9 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
@@ -89,26 +85,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D11BD5D02BEAB37C000EA58B /* Recovered References */ = {
+		624DC7762BEEB98000263FE8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				27EFEA512BE5608E00510C78 /* DrawingViewController.swift */,
+				D19A7A742BCF00D400E03789 /* ThreeDButton.swift */,
+				271E2B292BE021A900D802AD /* NotificationsView.swift */,
+				271E2B272BE0219C00D802AD /* PreferencesView.swift */,
+				271E2B252BE0218E00D802AD /* AccountSettingsView.swift */,
+				271E2B232BE01FD700D802AD /* SettingsView.swift */,
+				279FF3542BEBED2200771A51 /* SignUpView.swift */,
+				C72A0A492B7C1FB40072A87C /* DropdownTextView.swift */,
+				D1C93AB62B6D6D7F001734A2 /* ActivitiesView.swift */,
+				D16CA9FF2B76AFDA00615EC2 /* DrawingView.swift */,
+				279FF3562BEBED9500771A51 /* LoginView.swift */,
+				271E2B212BE01A9400D802AD /* ProfileView.swift */,
 			);
-			name = "Recovered References";
+			path = Views;
+			sourceTree = "<group>";
+		};
+		624DC7772BEEBB4900263FE8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D16CAA012B76B16A00615EC2 /* Constants.swift */,
+				C7719B7C2B6AEAD400C5DD80 /* Enum-Cases.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		624DC77A2BEEBB8400263FE8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6250B74E2BEEBBE1006F1AE9 /* DrawingViewController.swift */,
+				27EFEA4D2BE55FF600510C78 /* CloudKitManager.swift */,
+				27EFEA4F2BE5602A00510C78 /* UIImage+Extensions.swift */,
+				279FF3582BEBEE1200771A51 /* AuthenticationManager.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		D1C93A8B2B681A22001734A2 = {
 			isa = PBXGroup;
 			children = (
-				D11BD5D12BEABBF1000EA58B /* DrawingViewController.swift */,
+				D1C93A962B681A22001734A2 /* CreativeApp */,
+				624DC77A2BEEBB8400263FE8 /* ViewController */,
+				624DC7772BEEBB4900263FE8 /* Model */,
+				624DC7762BEEB98000263FE8 /* Views */,
 				D11BD5CE2BE96863000EA58B /* FaceBoard.swift */,
 				D11BD5CC2BE95E55000EA58B /* FreeFormDrawing.swift */,
 				D1A3E1952BE3FAA900BB4BC9 /* Launch Screen.storyboard */,
 				D19A7A732BCDAFD600E03789 /* MuseMe-Info.plist */,
-				C7719B7C2B6AEAD400C5DD80 /* Enum-Cases.swift */,
-				D1C93A962B681A22001734A2 /* CreativeApp */,
 				D1C93A952B681A22001734A2 /* Products */,
-				D11BD5D02BEAB37C000EA58B /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,25 +152,9 @@
 				D1C93AA52B681C0F001734A2 /* DropDownMenu */,
 				D1C93A972B681A22001734A2 /* CreativeAppApp.swift */,
 				D1C93A992B681A22001734A2 /* ContentView.swift */,
-				C72A0A492B7C1FB40072A87C /* DropdownTextView.swift */,
-				D1C93AB62B6D6D7F001734A2 /* ActivitiesView.swift */,
-				D16CA9FF2B76AFDA00615EC2 /* DrawingView.swift */,
 				D1C93A9B2B681A24001734A2 /* Assets.xcassets */,
 				D1C93A9D2B681A24001734A2 /* Preview Content */,
 				D1C93AB22B6C2F56001734A2 /* Localizable.xcstrings */,
-				D16CAA012B76B16A00615EC2 /* Constants.swift */,
-				D16CAA052B76B83D00615EC2 /* ColorPickerView.swift */,
-				D19A7A742BCF00D400E03789 /* ThreeDButton.swift */,
-				271E2B292BE021A900D802AD /* NotificationsView.swift */,
-				271E2B272BE0219C00D802AD /* PreferencesView.swift */,
-				271E2B252BE0218E00D802AD /* AccountSettingsView.swift */,
-				271E2B232BE01FD700D802AD /* SettingsView.swift */,
-				271E2B212BE01A9400D802AD /* ProfileView.swift */,
-				27EFEA4F2BE5602A00510C78 /* UIImage+Extensions.swift */,
-				27EFEA4D2BE55FF600510C78 /* CloudKitManager.swift */,
-				279FF3542BEBED2200771A51 /* SignUpView.swift */,
-				279FF3562BEBED9500771A51 /* LoginView.swift */,
-				279FF3582BEBEE1200771A51 /* AuthenticationManager.swift */,
 				279FF35A2BEBF28600771A51 /* App.swift */,
 			);
 			path = CreativeApp;
@@ -243,7 +253,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				271E2B242BE01FD700D802AD /* SettingsView.swift in Sources */,
-				D11BD5D22BEABBF1000EA58B /* DrawingViewController.swift in Sources */,
 				D1C93A9A2B681A22001734A2 /* ContentView.swift in Sources */,
 				271E2B282BE0219C00D802AD /* PreferencesView.swift in Sources */,
 				27EFEA502BE5602A00510C78 /* UIImage+Extensions.swift in Sources */,
@@ -258,14 +267,13 @@
 				279FF3592BEBEE1200771A51 /* AuthenticationManager.swift in Sources */,
 				D11BD5CF2BE96863000EA58B /* FaceBoard.swift in Sources */,
 				D1C93AAF2B6AC4B5001734A2 /* MenuList.swift in Sources */,
-				D16CAA062B76B83D00615EC2 /* ColorPickerView.swift in Sources */,
 				D16CAA002B76AFDA00615EC2 /* DrawingView.swift in Sources */,
 				D1C93AB72B6D6D7F001734A2 /* ActivitiesView.swift in Sources */,
 				279FF3552BEBED2200771A51 /* SignUpView.swift in Sources */,
 				27EFEA4E2BE55FF600510C78 /* CloudKitManager.swift in Sources */,
 				D19A7A752BCF00D400E03789 /* ThreeDButton.swift in Sources */,
-				27EFEA522BE5608E00510C78 /* DrawingViewController.swift in Sources */,
 				271E2B262BE0218E00D802AD /* AccountSettingsView.swift in Sources */,
+				6250B74F2BEEBBE1006F1AE9 /* DrawingViewController.swift in Sources */,
 				271E2B222BE01A9400D802AD /* ProfileView.swift in Sources */,
 				D1C93AA72B681CA4001734A2 /* MenuOptions.swift in Sources */,
 				271E2B2A2BE021A900D802AD /* NotificationsView.swift in Sources */,
