@@ -61,7 +61,9 @@ struct ActivitiesView: View {
                     }
                 }.padding()
             }
+            
         }
+        
     }
 }
 
