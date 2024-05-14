@@ -71,7 +71,7 @@ struct FreeFormDrawingView: View {
                         Button {
                             // Tool picker
                             //let toolPicker = PKToolPicker.init()
-                            @State var toolPicker = PKToolPicker()
+                            @State var toolPicker = PKToolPicker.init()
                             toolPicker.setVisible(true, forFirstResponder: canvas)
                             toolPicker.addObserver(canvas)
                             canvas.becomeFirstResponder()
