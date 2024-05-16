@@ -10,55 +10,92 @@ import SwiftUI
 struct ActivitiesView: View {
     @State private var currentLine = Line()
     @State private var lines: [Line] = []
-    var prompt: DropDownMenuOption
+    @State private var timerText = "00:00"  // Placeholder for the timer text
+    @State var prompt: DropDownMenuOption  // This should be a @State if you intend to modify it
+    @Environment(\.colorScheme) var colorScheme // Added to detect the current color scheme
 
     var body: some View {
         NavigationStack {
             ZStack {
-               
-                Image("background")
+                // Dynamically changing the background image based on the color scheme
+                Image(colorScheme == .dark ? "dark_background" : "light_background")
                     .resizable()
                     .scaledToFill()
-                    .frame(width: .infinity, height: 880)
                     .edgesIgnoringSafeArea(.all)
+
                 VStack {
+                    Spacer() // Push content to the center
+
+                    // Row of buttons for different topics
+                    HStack(spacing: 20) {
+                        ForEach(["Lack of inspiration", "Self Doubt", "Perfectionism", "Burnout", "Anxiety", "Let My Creativity Flow"], id: \.self) { topic in
+                            Button(action: {
+                                // Action for each topic button
+                                print("\(topic) button tapped")
+                            }) {
+                                Text(topic)
+                                    .fontWeight(.semibold)
+                                    .foregroundColor(.white)
+                                    .frame(width: 120, height: 70)
+                                    .background(Color(red: 8 / 255, green: 36 / 255, blue: 55 / 255))
+                                    .cornerRadius(10)
+                            }
+                        }
+                    }
+                    .padding(.bottom, 40)
+
+                    // Timer Display
+                    Text(timerText)
+                        .font(.system(size: 48, weight: .bold, design: .monospaced))
+                        .foregroundColor(.cyan)
+                        .padding(.bottom, 40)
+
+                    // Displaying the prompt in a semi-transparent box
                     Text(prompt.enumOption.associatedPrompts.randomElement()!.rawValue)
                         .foregroundColor(.white)
                         .bold()
                         .multilineTextAlignment(.center)
-                        .font(.largeTitle)
                         .font(.system(size: 24, weight: .regular, design: .default))
-//                        .clipShape(RoundedRectangle (cornerSize: CGSize(width: 10, height: 10)))
-                        .padding(.bottom, 40)
                         .padding()
-                        
+                        .background(Color.black.opacity(0.5))  // 50% opacity black background
+                        .cornerRadius(15)
+                        .padding(.bottom, 20)
 
-                    NavigationLink {
-                        FreeFormDrawingView()
-                    } label: {
-                        ZStack {
-                            Circle()
-                            
-                                .frame(width: 275)
-                                .foregroundColor(.cyan)
-                                .opacity(0.9)
-                                .shadow(color: .black,radius: 2)
-    
-                            Circle()
-                            
-                                .stroke(Color.cyan, lineWidth: 10)
-                                .shadow(color: .black,radius: 50)
-                                .frame(width: 275)
-                            Text("Draw your muse!")
-                                .font(.largeTitle.bold())
-                                .shadow(color: .black,radius: 1)
-                                .frame(width: 200)
+                    // Shuffle and Draw buttons with icons
+                    HStack {
+                        Button(action: {
+                            // Shuffle action should regenerate a prompt
+                            prompt = generateNewPrompt()
+                        }) {
+                            Image(systemName: "shuffle")
+                                .font(.title)
+                                .padding()
+                                .background(Color.blue.opacity(0.8))
                                 .foregroundColor(.white)
+                                .clipShape(Circle())
+                        }
+
+                        NavigationLink(destination: FreeFormDrawingView()) {
+                            Image(systemName: "pencil.tip")
+                                .font(.title)
+                                .padding()
+                                .background(Color.green.opacity(0.8))
+                                .foregroundColor(.white)
+                                .clipShape(Circle())
                         }
                     }
-                }.padding()
+                    
+                    Spacer() // Ensure the content stays centered
+                }
+                .padding()
             }
         }
+    }
+    
+    func generateNewPrompt() -> DropDownMenuOption {
+        // Logic to generate a new prompt
+        // Example:
+        return DropDownMenuOption(option: "New Option", enumOption: .Inspiration)
     }
 }
 

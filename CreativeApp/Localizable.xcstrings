@@ -32,6 +32,9 @@
     "Change Password" : {
 
     },
+    "Choose a Topic" : {
+
+    },
     "Color" : {
 
     },
@@ -48,9 +51,6 @@
 
     },
     "Draw Your Inspiration" : {
-
-    },
-    "Draw your muse!" : {
 
     },
     "Email" : {
@@ -254,9 +254,6 @@
           }
         }
       }
-    },
-    "What's blocking you?" : {
-
     }
   },
   "version" : "1.0"
