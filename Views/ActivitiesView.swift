@@ -18,11 +18,11 @@ struct ActivitiesView: View {
         NavigationStack {
             ZStack {
                 // Dynamically changing the background image based on the color scheme
-                Image(colorScheme == .dark ? "dark_background" : "light_background")
+                Image("vertbg")
                     .resizable()
-                    .scaledToFill()
+                    .opacity(0.8)
                     .edgesIgnoringSafeArea(.all)
-
+                    .offset(x: 1)
                 VStack {
                     Spacer() // Push content to the center
 
