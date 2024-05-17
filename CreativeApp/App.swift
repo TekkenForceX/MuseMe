@@ -11,7 +11,7 @@ import SwiftUI
 struct MuseMeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()  // Make sure this is your home page view
+            ContentView(enumSelection: .MuseMe)  // Make sure this is your home page view
         }
     }
 }

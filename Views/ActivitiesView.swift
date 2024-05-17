@@ -13,7 +13,7 @@ struct ActivitiesView: View {
     @State private var timerText = "00:00"  // Placeholder for the timer text
     @State var prompt: DropDownMenuOption  // This should be a @State if you intend to modify it
     @Environment(\.colorScheme) var colorScheme // Added to detect the current color scheme
-
+    
     var body: some View {
         NavigationStack {
             ZStack {
@@ -25,7 +25,7 @@ struct ActivitiesView: View {
                     .offset(x: 1)
                 VStack {
                     Spacer() // Push content to the center
-
+                    
                     // Row of buttons for different topics
                     HStack(spacing: 20) {
                         ForEach(["Lack of inspiration", "Self Doubt", "Perfectionism", "Burnout", "Anxiety", "Let My Creativity Flow"], id: \.self) { topic in
@@ -43,13 +43,13 @@ struct ActivitiesView: View {
                         }
                     }
                     .padding(.bottom, 40)
-
+                    
                     // Timer Display
                     Text(timerText)
                         .font(.system(size: 48, weight: .bold, design: .monospaced))
                         .foregroundColor(.cyan)
                         .padding(.bottom, 40)
-
+                    
                     // Displaying the prompt in a semi-transparent box
                     Text(prompt.enumOption.associatedPrompts.randomElement()!.rawValue)
                         .foregroundColor(.white)
@@ -60,7 +60,7 @@ struct ActivitiesView: View {
                         .background(Color.black.opacity(0.5))  // 50% opacity black background
                         .cornerRadius(15)
                         .padding(.bottom, 20)
-
+                    
                     // Shuffle and Draw buttons with icons
                     HStack {
                         Button(action: {
@@ -74,7 +74,7 @@ struct ActivitiesView: View {
                                 .foregroundColor(.white)
                                 .clipShape(Circle())
                         }
-
+                        
                         NavigationLink(destination: FreeFormDrawingView()) {
                             Image(systemName: "pencil.tip")
                                 .font(.title)
