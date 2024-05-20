@@ -12,8 +12,10 @@ struct ActivitiesView: View {
     @State private var lines: [Line] = []
     @State var timeRemaining = 60
     
+    
        let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()  // Placeholder for the timer text
     @State var prompt: DropDownMenuOption  // This should be a @State if you intend to modify it
+    @EnvironmentObject var viewModel: ViewModel
     @Environment(\.colorScheme) var colorScheme // Added to detect the current color scheme
     
     var body: some View {
@@ -36,18 +38,9 @@ struct ActivitiesView: View {
                                 // Action for each topic button
                                 print("\(topic) button tapped") //
 //                                Log the button tapped
-                          
-//                                
-//                                switch selection {
-//                                case "Lack of inspiration":
-//                                    enumSelection = .Inspiration
-//                                case "Self Doubt":
-//                                    enumSelection = .SelfDoubt
-//                                case "Perfectionism":
-//                                    enumSelection = .Perfectionalism
-//                                default:
-//                                    break
-//                                }
+                                 viewModel.updateViewModelAndPrompt(for: topic)
+                                prompt = DropDownMenuOption(enumOption: viewModel.enumSelection)
+                                
                             }) {
                                 Text(topic)
                                     .fontWeight(.bold)
@@ -60,29 +53,16 @@ struct ActivitiesView: View {
                                     .cornerRadius(12)
                                     .shadow(color: colorScheme == .dark ? .gray.opacity(0.6) : .black.opacity(0.8),radius: 10, x: 0, y: 12)
                             }
-                            
-
                         }
                     }
                     .padding([.top, .bottom], 30)
                     HStack(alignment: .center, spacing: 20) {
-                        ForEach([                            "Burnout", "Anxiety", "Let My Creativity Flow"], id: \.self) { topic in
+                        ForEach(["Burnout", "Anxiety", "Let My Creativity Flow"], id: \.self) { topic in
                             Button(action: {
                                 // Action for each topic button
                                 print("\(topic) button tapped") // Log the button tapped
-//                                selection = topic
                                 
-//                                switch selection {
-//                                case "Let My Creativity Flow":
-//                                    enumSelection = .MuseMe
-//                                case "Anxiety":
-//                                    enumSelection = .Anxiety
-//                                case "Burnout":
-//                                    enumSelection = .Burnout
-//                                default:
-//                                    break
-//                                }
-                                
+                                viewModel.updateViewModelAndPrompt(for: topic)
                           
                             }) {
                                 Text(topic)
@@ -97,8 +77,6 @@ struct ActivitiesView: View {
                                     .cornerRadius(12)
                                     .shadow(color: colorScheme == .dark ? .gray.opacity(0.6) : .black.opacity(0.8), radius: 10, x: 0, y: 12)
                             }
-                            
-//                            "Burnout", "Anxiety", "Let My Creativity Flow"
                         }
                     }
                     .padding(.bottom, 30)
@@ -117,6 +95,7 @@ struct ActivitiesView: View {
                     
                     // Displaying the prompt in a semi-transparent box
                     VStack {
+                     
                         Text(prompt.enumOption.associatedPrompts.randomElement()!.rawValue)
                             .foregroundColor(.white)
                             .frame(width: 900, height: 300)
@@ -124,9 +103,6 @@ struct ActivitiesView: View {
                             .multilineTextAlignment(.center)
                             .font(.system(size: 36))
                             .padding()
-                            // 50% opacity black background
-                            
-                        
                     }
                     .background(Color.black.opacity(0.5))
                     .cornerRadius(15)
@@ -153,24 +129,24 @@ struct ActivitiesView: View {
                                 
                         }
                     }
-                    
                     Spacer() // Ensure the content stays centered
                 }
                 .padding()
             }
+            .environmentObject(viewModel)
         }
     }
     
     func generateNewPrompt() -> DropDownMenuOption {
-        // Logic to generate a new prompt
-        // Example:
-        return DropDownMenuOption(option: "New Option", enumOption: .Inspiration)
+        let newPrompt = DropDownMenuOption(enumOption: viewModel.enumSelection)
+        return newPrompt
     }
 }
 
 // Preview provider for ActivitiesView
 struct ActivitiesView_Previews: PreviewProvider {
     static var previews: some View {
-        ActivitiesView(prompt: DropDownMenuOption(option: "", enumOption: .SelfDoubt))
+        ActivitiesView(prompt: DropDownMenuOption(enumOption: .SelfDoubt))
+            .environmentObject(ViewModel())
     }
 }

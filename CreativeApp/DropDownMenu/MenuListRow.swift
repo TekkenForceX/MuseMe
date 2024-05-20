@@ -1,53 +1,53 @@
+////
+////  MenuListRow.swift
+////  CreativeApp
+////
+////  Created by Matthew Fails on 1/31/24.
+////
 //
-//  MenuListRow.swift
-//  CreativeApp
+//import SwiftUI
 //
-//  Created by Matthew Fails on 1/31/24.
+//struct DropdownMenuListRow: View {
+//    let option: DropDownMenuOption
+//    
+////    var menuText: LocalizedStringKey {
+////        LocalizedStringKey(option.option)
+//    }
+//    
+//    let onSelectedAction: (_ option: DropDownMenuOption) -> Void
+//    
+//    var body: some View {
+//                    
+//            
+////            NavigationLink {
+////                ActivitiesView()
+////            } label: {
+////                Text(menuText)
+////                    .frame(maxWidth: .infinity, alignment: .leading)
+////            }
 //
-
-import SwiftUI
-
-struct DropdownMenuListRow: View {
-    let option: DropDownMenuOption
-    
-    var menuText: LocalizedStringKey {
-        LocalizedStringKey(option.option)
-    }
-    
-    let onSelectedAction: (_ option: DropDownMenuOption) -> Void
-    
-    var body: some View {
-                    
-            
-//            NavigationLink {
-//                ActivitiesView()
-//            } label: {
+//            Button(action: {
+//                self.onSelectedAction(option)
+//            }) {
 //                Text(menuText)
 //                    .frame(maxWidth: .infinity, alignment: .leading)
+//                    .foregroundColor(.white)
+//                    .font(.largeTitle)
+//                    .bold()
 //            }
-
-            Button(action: {
-                self.onSelectedAction(option)
-            }) {
-                Text(menuText)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .foregroundColor(.white)
-                    .font(.largeTitle)
-                    .bold()
-            }
-            .foregroundColor(.black)
-            .padding(.vertical, 5)
-            .padding(.horizontal)
-        }
-    }
-
-
-struct DropdownMenuListRow_Previews: PreviewProvider {
-    static var previews: some View {
-        // Assuming creativeBlockOptions has at least one element
-        DropdownMenuListRow(option: DropDownMenuOption.creativeBlockOptions.first!, onSelectedAction: { _ in })
-        DropdownMenuListRow(option: DropDownMenuOption.creativeBlockOptions.first!, onSelectedAction: { _ in })
-            .environment(\.locale, Locale(identifier: "zh-Hans"))
-    }
-}
-
+//            .foregroundColor(.black)
+//            .padding(.vertical, 5)
+//            .padding(.horizontal)
+//        }
+//    }
+//
+//
+//struct DropdownMenuListRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        // Assuming creativeBlockOptions has at least one element
+//        DropdownMenuListRow(option: DropDownMenuOption.creativeBlockOptions.first!, onSelectedAction: { _ in })
+//        DropdownMenuListRow(option: DropDownMenuOption.creativeBlockOptions.first!, onSelectedAction: { _ in })
+//            .environment(\.locale, Locale(identifier: "zh-Hans"))
+//    }
+//}
+//

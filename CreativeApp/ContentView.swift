@@ -9,7 +9,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var isSettingsViewPresented = false
     @State var selection = ""
-    @State var enumSelection: Categories
+    @EnvironmentObject var viewModel: ViewModel
     @Environment(\.colorScheme) var colorScheme
 
     var body: some View {
@@ -33,11 +33,6 @@ struct ContentView: View {
                         .padding(.top, 15)
                         
                        
-                    
-                    
-                   
-                    
-                    
                     HStack(spacing: 20) {
                         ForEach(["Lack of inspiration", "Self Doubt", "Perfectionism"], id: \.self) { topic in
                             Button(action: {
@@ -48,11 +43,11 @@ struct ContentView: View {
                                 
                                 switch selection {
                                 case "Lack of inspiration":
-                                    enumSelection = .Inspiration
+                                        viewModel.enumSelection = .Inspiration
                                 case "Self Doubt":
-                                    enumSelection = .SelfDoubt
+                                    viewModel.enumSelection = .SelfDoubt
                                 case "Perfectionism":
-                                    enumSelection = .Perfectionalism
+                                    viewModel.enumSelection = .Perfectionalism
                                 default:
                                     break
                                 }
@@ -82,11 +77,11 @@ struct ContentView: View {
                                 
                                 switch selection {
                                 case "Let My Creativity Flow":
-                                    enumSelection = .MuseMe
+                                    viewModel.enumSelection = .MuseMe
                                 case "Anxiety":
-                                    enumSelection = .Anxiety
+                                    viewModel.enumSelection = .Anxiety
                                 case "Burnout":
-                                    enumSelection = .Burnout
+                                    viewModel.enumSelection = .Burnout
                                 default:
                                     break
                                 }
@@ -136,7 +131,7 @@ struct ContentView: View {
                     NavigationLink{
                         // Define your action here
 //                        ActivityView( DropDownMenuOption(option: "", enumOption: .SelfDoubt))
-                        ActivitiesView(prompt: DropDownMenuOption(option: "", enumOption: enumSelection))
+                        ActivitiesView(prompt: DropDownMenuOption(enumOption: viewModel.enumSelection))
                     } label:  {
                         Image(colorScheme == .dark ? "Button_dark" : "Button_light")
                             .resizable()
@@ -165,6 +160,7 @@ struct ContentView: View {
                     }
                 }
             }
+            .environmentObject(viewModel)
         }
     }
 }
@@ -172,7 +168,9 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         
-        ContentView(enumSelection: .MuseMe).environment(\.locale, Locale(identifier: "zh-Hans"))
+        ContentView()
+            .environmentObject(ViewModel())
+            
     }
 }
 
