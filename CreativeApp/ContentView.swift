@@ -9,7 +9,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var isSettingsViewPresented = false
     @State var selection = ""
-    @EnvironmentObject var viewModel: ViewModel
+    @ObservedObject var viewModel = ViewModel()
     @Environment(\.colorScheme) var colorScheme
 
     var body: some View {
@@ -147,19 +147,20 @@ struct ContentView: View {
                 .padding()
                 .background(RoundedRectangle(cornerRadius: 20).fill(.ultraThinMaterial).opacity(0.8))
             }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(action: {
-                        isSettingsViewPresented = true
-                    }) {
-                        Image(systemName: "gear")
-                            .resizable()
-                            .fontWeight(.bold)
-                            .tint(colorScheme == .dark ? Color.white : Color("buttonbg"))
-                            .frame(width: 50, height: 50)
-                    }
-                }
-            }
+//            TODO: Implement this later
+//            .toolbar {
+//                ToolbarItem(placement: .navigationBarTrailing) {
+//                    Button(action: {
+//                        isSettingsViewPresented = true
+//                    }) {
+//                        Image(systemName: "gear")
+//                            .resizable()
+//                            .fontWeight(.bold)
+//                            .tint(colorScheme == .dark ? Color.white : Color("buttonbg"))
+//                            .frame(width: 50, height: 50)
+//                    }
+//                }
+//            }
             .environmentObject(viewModel)
         }
     }

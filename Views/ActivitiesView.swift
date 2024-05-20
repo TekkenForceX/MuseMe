@@ -18,6 +18,7 @@ struct ActivitiesView: View {
     @EnvironmentObject var viewModel: ViewModel
     @Environment(\.colorScheme) var colorScheme // Added to detect the current color scheme
     
+    
     var body: some View {
         NavigationStack {
             ZStack {
@@ -98,24 +99,28 @@ struct ActivitiesView: View {
                      
                         Text(prompt.enumOption.associatedPrompts.randomElement()!.rawValue)
                             .foregroundColor(.white)
-                            .frame(width: 900, height: 300)
+                            .padding()
+                            .frame(width: 700, height: 300)
+                            .fontWeight(.bold)
                             .bold()
                             .multilineTextAlignment(.center)
-                            .font(.system(size: 36))
+                            .lineLimit(nil)
+                            .font(.title)
                             .padding()
                     }
+                    
                     .background(Color.black.opacity(0.5))
                     .cornerRadius(15)
                     .padding(.bottom, 20)
                     
                     // Shuffle and Draw buttons with icons
-                    HStack {
+                    HStack(spacing: 100) {
                         Button(action: {
                             // Shuffle action should regenerate a prompt
                             prompt = generateNewPrompt()
                         }) {
                             Image(systemName: "shuffle")
-                                .font(.title)
+                                .font(.system(size: 42))
                                 .padding()
                                 .background(Color.blue.opacity(0.8))
                                 .foregroundColor(.white)
@@ -125,7 +130,7 @@ struct ActivitiesView: View {
                         NavigationLink(destination: FreeFormDrawingView()) {
                             Image("drawsymbol")
                                 .resizable()
-                                .frame(maxWidth: 65, maxHeight: 65)
+                                .frame(maxWidth: 75, maxHeight: 75)
                                 
                         }
                     }

@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "vertl.png",
+      "filename" : "mmlv.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -12,7 +12,7 @@
           "value" : "dark"
         }
       ],
-      "filename" : "vert.png",
+      "filename" : "mmdv.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
