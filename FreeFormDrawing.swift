@@ -43,9 +43,10 @@ struct FreeFormDrawingView: View {
                         .font(.title)
                         .padding()
                         .fontWeight(.semibold)
-                        .frame(minWidth: 800, minHeight: 150)
+                        .frame(minWidth: 825, minHeight: 150)
                         .background(RoundedRectangle(cornerRadius: 16).fill(Color("buttonbg").opacity(colorScheme == .dark ? 1 : 1)))
-                        .shadow(color: colorScheme == .dark ? .gray.opacity(0.6) : .black.opacity(0.8),radius: 10, x: 0, y: 12)
+                        .shadow(color: colorScheme == .dark ? .gray.opacity(0.0) : .black.opacity(0.6),radius: 4, x: 0, y: 10)
+                        
                 }
             }
             // 2. Create an instance of the drawing view
@@ -85,16 +86,16 @@ struct FreeFormDrawingView: View {
                         Divider()
                             .rotationEffect(.degrees(90))
                         
-                        Button {
-                            // Tool picker
-                            //let toolPicker = PKToolPicker.init()
-                            @State var toolPicker = PKToolPicker.init()
-                            toolPicker.setVisible(true, forFirstResponder: canvas)
-                            toolPicker.addObserver(canvas)
-                            canvas.becomeFirstResponder()
-                        } label: {
-                            Image(systemName: "pencil.tip.crop.circle.badge.plus")
-                        }
+//                        Button {
+//                            // Tool picker
+//                            //let toolPicker = PKToolPicker.init()
+//                            @State var toolPicker = PKToolPicker.init()
+//                            toolPicker.setVisible(true, forFirstResponder: canvas)
+//                            toolPicker.addObserver(canvas)
+//                            canvas.becomeFirstResponder()
+//                        } label: {
+//                            Image(systemName: "pencil.tip.crop.circle.badge.plus")
+//                        }
                         
                         // Menu for pencil types and color
                         Menu {

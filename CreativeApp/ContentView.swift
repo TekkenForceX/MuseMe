@@ -64,7 +64,7 @@ struct ContentView: View {
                                         .background(Color("buttonbg").opacity(colorScheme == .dark ? 0.8 : 1))
                                     // Dark navy blue
                                         .cornerRadius(12)
-                                        .shadow(color: colorScheme == .dark ? .gray.opacity(0.6) : .black.opacity(0.8),radius: 10, x: 0, y: 12)
+                                        .shadow(color: colorScheme == .dark ? .gray.opacity(0.6) : .black.opacity(0.8),radius: 6, x: 0, y: 10)
                                 }
                                 
                                 
@@ -101,7 +101,7 @@ struct ContentView: View {
                                         .background(Color("buttonbg").opacity(colorScheme == .dark ? 0.8 : 1))
                                     // Dark navy blue
                                         .cornerRadius(12)
-                                        .shadow(color: colorScheme == .dark ? .gray.opacity(0.6) : .black.opacity(0.8), radius: 10, x: 0, y: 12)
+                                        .shadow(color: colorScheme == .dark ? .gray.opacity(0.6) : .black.opacity(0.8), radius: 6, x: 0, y: 10)
                                 }
                                 
                                 //                            "Burnout", "Anxiety", "Let My Creativity Flow"
@@ -128,13 +128,16 @@ struct ContentView: View {
                         .background(Color("buttonbg").opacity(colorScheme == .dark ? 0.8 : 1))
                         .clipShape(RoundedRectangle(cornerRadius: 20))
                         .padding(.bottom, 30)
-                        .shadow(color: colorScheme == .dark ? .gray.opacity(0.6) : .black.opacity(0.8), radius: 10, x: 0, y: 12)
+                        .shadow(color: colorScheme == .dark ? .gray.opacity(0.6) : .black.opacity(0.8), radius: 6, x: 0, y: 10)
                         
                         
                         NavigationLink{
                             // Define your action here
                             //                        ActivityView( DropDownMenuOption(option: "", enumOption: .SelfDoubt))
-                            ActivitiesView(prompt: DropDownMenuOption(enumOption: viewModel.enumSelection))
+                         
+                                ActivitiesView(prompt: DropDownMenuOption(enumOption: viewModel.enumSelection))
+                                
+                            
                         } label:  {
                             Image(colorScheme == .dark ? "Button_dark" : "Button_light")
                                 .resizable()
