@@ -10,9 +10,11 @@ import SwiftUI
 @main
 struct MuseMeApp: App {
     
+    
+    
     var body: some Scene {
         WindowGroup {
-          SplashScreen()
+          ViewCoordinator()
         }
     }
 }

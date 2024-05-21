@@ -9,7 +9,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var isSettingsViewPresented = false
     @State var selection = ""
-    @ObservedObject var viewModel = ViewModel()
+    @EnvironmentObject var viewModel: ViewModel
     @Environment(\.colorScheme) var colorScheme
 
     var body: some View {
