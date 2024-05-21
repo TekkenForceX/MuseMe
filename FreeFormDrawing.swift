@@ -327,13 +327,18 @@ struct FreeFormDrawingView: View {
                         }
                         
                         Button(action: {
-                            heading.toggle()
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                                withAnimation(.easeInOut(duration: 0.5)) {
+                                    heading.toggle()
+                                }
+                            }
+                            
                         }, label: {
                             Image( systemName: heading ? "eye.fill" : "eye.slash.fill")
+                               
                         })
-                        
                     }
-                } // MARK: Toolbar items end
+                }// MARK: Toolbar items end
                 .environmentObject(viewModel)
         } // NavigationStack
     }
