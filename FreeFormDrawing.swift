@@ -28,9 +28,26 @@ struct FreeFormDrawingView: View {
     @State private var isRecording = false
     @Environment(\.dismiss) private var dismiss
     @Environment(\.undoManager) private var undoManager
+    @EnvironmentObject var viewModel: ViewModel
+    @Environment(\.colorScheme) var colorScheme
+    @State var heading = true
     
     var body: some View {
         NavigationStack {
+           
+            ZStack(alignment: .top) {
+                if heading == true {
+                    Text(viewModel.enumSelection.associatedPrompts.randomElement()!.rawValue)
+                        .foregroundStyle(Color("textC"))
+                        .multilineTextAlignment(.center)
+                        .font(.title)
+                        .padding()
+                        .fontWeight(.semibold)
+                        .frame(minWidth: 800, minHeight: 150)
+                        .background(RoundedRectangle(cornerRadius: 16).fill(Color("buttonbg").opacity(colorScheme == .dark ? 1 : 1)))
+                        .shadow(color: colorScheme == .dark ? .gray.opacity(0.6) : .black.opacity(0.8),radius: 10, x: 0, y: 12)
+                }
+            }
             // 2. Create an instance of the drawing view
             DrawingVieww(canvas: $canvas, isDrawing: $isDrawing, pencilType: $pencilType, color: $color)
                 .navigationBarTitleDisplayMode(.inline)
@@ -308,8 +325,21 @@ struct FreeFormDrawingView: View {
                                     .font(.caption2)
                             }
                         }
+                        
+                        Button(action: {
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                                withAnimation(.easeInOut(duration: 0.5)) {
+                                    heading.toggle()
+                                }
+                            }
+                            
+                        }, label: {
+                            Image( systemName: heading ? "eye.fill" : "eye.slash.fill")
+                               
+                        })
                     }
-                } // MARK: Toolbar items end
+                }// MARK: Toolbar items end
+                .environmentObject(viewModel)
         } // NavigationStack
     }
     
@@ -366,5 +396,6 @@ struct DrawingVieww: UIViewRepresentable {
 struct DrawingVieww_Previews: PreviewProvider {
     static var previews: some View {
         FreeFormDrawingView()
+            .environmentObject(ViewModel())
     }
 }
