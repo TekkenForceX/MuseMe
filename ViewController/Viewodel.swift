@@ -10,7 +10,7 @@ import Foundation
 class ViewModel: ObservableObject {
     
     @Published var enumSelection: Categories = .SelfDoubt
-    
+    @Published var text = ""
     func updateViewModelAndPrompt(for topic: String) {
         switch topic {
         case "Lack of inspiration":
@@ -29,4 +29,10 @@ class ViewModel: ObservableObject {
             break
         }
     }
+    
+    func updateText(for topic: Categories) -> String {
+        self.text = topic.associatedPrompts.randomElement()!.rawValue
+        return text
+    }
+    
 }

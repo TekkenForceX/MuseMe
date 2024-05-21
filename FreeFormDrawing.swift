@@ -37,7 +37,7 @@ struct FreeFormDrawingView: View {
            
             ZStack(alignment: .top) {
                 if heading == true {
-                    Text(viewModel.enumSelection.associatedPrompts.randomElement()!.rawValue)
+                    Text(viewModel.text)
                         .foregroundStyle(Color("textC"))
                         .multilineTextAlignment(.center)
                         .font(.title)

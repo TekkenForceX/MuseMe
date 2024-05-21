@@ -47,10 +47,13 @@ struct ContentView: View {
                                     switch selection {
                                     case "Lack of inspiration":
                                         viewModel.enumSelection = .Inspiration
+                                        viewModel.text = viewModel.updateText(for: viewModel.enumSelection)
                                     case "Self Doubt":
                                         viewModel.enumSelection = .SelfDoubt
+                                        viewModel.text = viewModel.updateText(for: viewModel.enumSelection)
                                     case "Perfectionism":
                                         viewModel.enumSelection = .Perfectionalism
+                                        viewModel.text = viewModel.updateText(for: viewModel.enumSelection)
                                     default:
                                         break
                                     }
@@ -81,10 +84,13 @@ struct ContentView: View {
                                     switch selection {
                                     case "Let My Creativity Flow":
                                         viewModel.enumSelection = .MuseMe
+                                        viewModel.text = viewModel.updateText(for: viewModel.enumSelection)
                                     case "Anxiety":
                                         viewModel.enumSelection = .Anxiety
+                                        viewModel.text = viewModel.updateText(for: viewModel.enumSelection)
                                     case "Burnout":
                                         viewModel.enumSelection = .Burnout
+                                        viewModel.text = viewModel.updateText(for: viewModel.enumSelection)
                                     default:
                                         break
                                     }

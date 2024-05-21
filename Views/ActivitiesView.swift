@@ -19,6 +19,7 @@ struct ActivitiesView: View {
     @Environment(\.colorScheme) var colorScheme // Added to detect the current color scheme
     
     
+    
     var body: some View {
         NavigationStack {
             ZStack {
@@ -40,7 +41,7 @@ struct ActivitiesView: View {
                                 print("\(topic) button tapped") //
 //                                Log the button tapped
                                  viewModel.updateViewModelAndPrompt(for: topic)
-                                prompt = DropDownMenuOption(enumOption: viewModel.enumSelection)
+                                viewModel.text = viewModel.updateText(for: viewModel.enumSelection)
                                 
                             }) {
                                 Text(topic)
@@ -64,6 +65,7 @@ struct ActivitiesView: View {
                                 print("\(topic) button tapped") // Log the button tapped
                                 
                                 viewModel.updateViewModelAndPrompt(for: topic)
+                                viewModel.text = viewModel.updateText(for: viewModel.enumSelection)
                           
                             }) {
                                 Text(topic)
@@ -97,7 +99,7 @@ struct ActivitiesView: View {
                     // Displaying the prompt in a semi-transparent box
                     VStack {
                      
-                        Text(prompt.enumOption.associatedPrompts.randomElement()!.rawValue)
+                        Text(viewModel.text)
                             .foregroundColor(.white)
                             .padding()
                             .frame(width: 700, height: 300)
@@ -117,7 +119,7 @@ struct ActivitiesView: View {
                     HStack(spacing: 100) {
                         Button(action: {
                             // Shuffle action should regenerate a prompt
-                            prompt = generateNewPrompt()
+                            viewModel.text = viewModel.updateText(for: viewModel.enumSelection)
                         }) {
                             Image(systemName: "shuffle")
                                 .font(.system(size: 42))
