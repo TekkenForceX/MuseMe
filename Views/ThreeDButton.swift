@@ -18,13 +18,13 @@ struct ThreeD: ButtonStyle {
             Image("Button_light")
                 .resizable()
                 .offset(y: 8)
-                .frame(width: 400, height: 400)
+                .frame(width: 200, height: 200)
             
             Image("Button_light")
                 .resizable()
-                .offset(y: 5)
+                .offset(y: 8)
                 .offset(y: configuration.isPressed ? 10 : 0)
-                .frame(width: 400, height: 400)
+                .frame(width: 200, height: 200)
             
             configuration.label
                 .offset(y: configuration.isPressed ? 10 : 0)
