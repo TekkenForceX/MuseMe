@@ -6,17 +6,13 @@
 //
 
 import SwiftUI
-
 import UIKit
-
 import PencilKit
-
 
 struct Drawing {
     var title: String
     var image: UIImage
 }
-
 
 struct Line {
     var points = [CGPoint]()
@@ -109,17 +105,18 @@ struct DrawingView: View {
         let renderer = UIGraphicsImageRenderer(size: CGSize(width: 380, height: 380))
         return renderer.image { ctx in
             ctx.cgContext.setFillColor(UIColor.white.cgColor)
-            ctx.cgContext.setStrokeColor(UIColor.black.cgColor)
-            ctx.cgContext.setLineWidth(CGFloat(thickness))
+            ctx.cgContext.fill(CGRect(origin: .zero, size: CGSize(width: 380, height: 380)))
             
-            let path = UIBezierPath()
             for line in lines {
                 guard let firstPoint = line.points.first else { continue }
-                path.move(to: firstPoint)
-                line.points.forEach { path.addLine(to: $0) }
+                ctx.cgContext.beginPath()
+                ctx.cgContext.move(to: firstPoint)
+                for point in line.points.dropFirst() {
+                    ctx.cgContext.addLine(to: point)
+                }
                 ctx.cgContext.setStrokeColor(UIColor(line.color).cgColor)
                 ctx.cgContext.setLineWidth(CGFloat(line.lineWidth))
-                path.stroke()
+                ctx.cgContext.strokePath()
             }
         }
     }
