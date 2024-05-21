@@ -19,6 +19,10 @@
 		27EFEA4E2BE55FF600510C78 /* CloudKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EFEA4D2BE55FF600510C78 /* CloudKitManager.swift */; };
 		27EFEA502BE5602A00510C78 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EFEA4F2BE5602A00510C78 /* UIImage+Extensions.swift */; };
 		6250B74F2BEEBBE1006F1AE9 /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6250B74E2BEEBBE1006F1AE9 /* DrawingViewController.swift */; };
+		62C3172F2BFBBF2200326CFB /* Viewodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C3172E2BFBBF2200326CFB /* Viewodel.swift */; };
+		62C317312BFBDEAD00326CFB /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C317302BFBDEAD00326CFB /* SplashScreen.swift */; };
+		62C317332BFCF8D300326CFB /* ViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C317322BFCF8D300326CFB /* ViewCoordinator.swift */; };
+		62C317352BFCFA9500326CFB /* MuseMe-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 62C317342BFCFA9500326CFB /* MuseMe-Info.plist */; };
 		C72A0A4A2B7C1FB40072A87C /* DropdownTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C72A0A492B7C1FB40072A87C /* DropdownTextView.swift */; };
 		C7719B7D2B6AEAD400C5DD80 /* Enum-Cases.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7719B7C2B6AEAD400C5DD80 /* Enum-Cases.swift */; };
 		D11BD5CD2BE95E55000EA58B /* FreeFormDrawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11BD5CC2BE95E55000EA58B /* FreeFormDrawing.swift */; };
@@ -26,7 +30,6 @@
 		D16CAA002B76AFDA00615EC2 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16CA9FF2B76AFDA00615EC2 /* DrawingView.swift */; };
 		D16CAA022B76B16A00615EC2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16CAA012B76B16A00615EC2 /* Constants.swift */; };
 		D19A7A752BCF00D400E03789 /* ThreeDButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19A7A742BCF00D400E03789 /* ThreeDButton.swift */; };
-		D1A3E1962BE3FAA900BB4BC9 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1A3E1952BE3FAA900BB4BC9 /* Launch Screen.storyboard */; };
 		D1C93A982B681A22001734A2 /* CreativeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C93A972B681A22001734A2 /* CreativeAppApp.swift */; };
 		D1C93A9A2B681A22001734A2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C93A992B681A22001734A2 /* ContentView.swift */; };
 		D1C93A9C2B681A24001734A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1C93A9B2B681A24001734A2 /* Assets.xcassets */; };
@@ -52,15 +55,17 @@
 		27EFEA4D2BE55FF600510C78 /* CloudKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitManager.swift; sourceTree = "<group>"; };
 		27EFEA4F2BE5602A00510C78 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		6250B74E2BEEBBE1006F1AE9 /* DrawingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawingViewController.swift; sourceTree = "<group>"; };
+		62C3172E2BFBBF2200326CFB /* Viewodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viewodel.swift; sourceTree = "<group>"; };
+		62C317302BFBDEAD00326CFB /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		62C317322BFCF8D300326CFB /* ViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCoordinator.swift; sourceTree = "<group>"; };
+		62C317342BFCFA9500326CFB /* MuseMe-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MuseMe-Info.plist"; sourceTree = "<group>"; };
 		C72A0A492B7C1FB40072A87C /* DropdownTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownTextView.swift; sourceTree = "<group>"; };
 		C7719B7C2B6AEAD400C5DD80 /* Enum-Cases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Enum-Cases.swift"; sourceTree = "<group>"; };
 		D11BD5CC2BE95E55000EA58B /* FreeFormDrawing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeFormDrawing.swift; sourceTree = "<group>"; };
 		D11BD5CE2BE96863000EA58B /* FaceBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceBoard.swift; sourceTree = "<group>"; };
 		D16CA9FF2B76AFDA00615EC2 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		D16CAA012B76B16A00615EC2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		D19A7A732BCDAFD600E03789 /* MuseMe-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MuseMe-Info.plist"; sourceTree = "<group>"; };
 		D19A7A742BCF00D400E03789 /* ThreeDButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDButton.swift; sourceTree = "<group>"; };
-		D1A3E1952BE3FAA900BB4BC9 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		D1C93A942B681A22001734A2 /* MuseMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuseMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1C93A972B681A22001734A2 /* CreativeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreativeAppApp.swift; sourceTree = "<group>"; };
 		D1C93A992B681A22001734A2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,6 +104,7 @@
 				D16CA9FF2B76AFDA00615EC2 /* DrawingView.swift */,
 				279FF3562BEBED9500771A51 /* LoginView.swift */,
 				271E2B212BE01A9400D802AD /* ProfileView.swift */,
+				62C317302BFBDEAD00326CFB /* SplashScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -119,6 +125,7 @@
 				27EFEA4D2BE55FF600510C78 /* CloudKitManager.swift */,
 				27EFEA4F2BE5602A00510C78 /* UIImage+Extensions.swift */,
 				279FF3582BEBEE1200771A51 /* AuthenticationManager.swift */,
+				62C3172E2BFBBF2200326CFB /* Viewodel.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -132,8 +139,7 @@
 				624DC7762BEEB98000263FE8 /* Views */,
 				D11BD5CE2BE96863000EA58B /* FaceBoard.swift */,
 				D11BD5CC2BE95E55000EA58B /* FreeFormDrawing.swift */,
-				D1A3E1952BE3FAA900BB4BC9 /* Launch Screen.storyboard */,
-				D19A7A732BCDAFD600E03789 /* MuseMe-Info.plist */,
+				62C317342BFCFA9500326CFB /* MuseMe-Info.plist */,
 				D1C93A952B681A22001734A2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -156,6 +162,7 @@
 				D1C93A9D2B681A24001734A2 /* Preview Content */,
 				D1C93AB22B6C2F56001734A2 /* Localizable.xcstrings */,
 				279FF35A2BEBF28600771A51 /* App.swift */,
+				62C317322BFCF8D300326CFB /* ViewCoordinator.swift */,
 			);
 			path = CreativeApp;
 			sourceTree = "<group>";
@@ -238,9 +245,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62C317352BFCFA9500326CFB /* MuseMe-Info.plist in Resources */,
 				D1C93A9F2B681A24001734A2 /* Preview Assets.xcassets in Resources */,
 				D1C93A9C2B681A24001734A2 /* Assets.xcassets in Resources */,
-				D1A3E1962BE3FAA900BB4BC9 /* Launch Screen.storyboard in Resources */,
 				D1C93AB32B6C2F56001734A2 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,9 +272,12 @@
 				279FF3572BEBED9500771A51 /* LoginView.swift in Sources */,
 				C72A0A4A2B7C1FB40072A87C /* DropdownTextView.swift in Sources */,
 				279FF3592BEBEE1200771A51 /* AuthenticationManager.swift in Sources */,
+				62C317332BFCF8D300326CFB /* ViewCoordinator.swift in Sources */,
 				D11BD5CF2BE96863000EA58B /* FaceBoard.swift in Sources */,
 				D1C93AAF2B6AC4B5001734A2 /* MenuList.swift in Sources */,
 				D16CAA002B76AFDA00615EC2 /* DrawingView.swift in Sources */,
+				62C317312BFBDEAD00326CFB /* SplashScreen.swift in Sources */,
+				62C3172F2BFBBF2200326CFB /* Viewodel.swift in Sources */,
 				D1C93AB72B6D6D7F001734A2 /* ActivitiesView.swift in Sources */,
 				279FF3552BEBED2200771A51 /* SignUpView.swift in Sources */,
 				27EFEA4E2BE55FF600510C78 /* CloudKitManager.swift in Sources */,

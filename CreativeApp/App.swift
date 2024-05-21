@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct MuseMeApp: App {
+    
+    
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()  // Make sure this is your home page view
+          ViewCoordinator()
         }
     }
 }
