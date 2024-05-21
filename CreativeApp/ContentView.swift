@@ -108,11 +108,18 @@ struct ContentView: View {
                     }) {
                         Image(colorScheme == .dark ? "Button_dark" : "Button_light")
                             .resizable()
-                            .scaledToFit()
-                            .frame(height: 200)
-                            .padding(.bottom, 15)
+                            .offset(y: 8)
+                            .frame(width: 400, height: 400)
+                            
+                        
+                        
+                          
+                    
+                            
+                            
                         
                     }
+                    .buttonStyle(ThreeD())
                     
                 }
                 .padding()
